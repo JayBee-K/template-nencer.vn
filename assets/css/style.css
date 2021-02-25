@@ -1200,15 +1200,16 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
         font-size: 1em;
     }
 
+    .card-decor .card-img-top {
+        width: 100%;
+        max-width: 65%;
+    }
+
     .card-solution .card-header {
         width: 120px;
         height: 120px;
     }
 
-    .card-decor .card-img-top {
-        width: 100%;
-        max-width: 65%;
-    }
 
     .card-solution .card-body {
         padding: 15px 5px 0;
@@ -1223,6 +1224,10 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     .block-website .website-item .website-content .website-title a,
     .card-app .card-body .card-title {
         font-size: 1.1em !important;
+    }
+
+    .card-app {
+        height: auto;
     }
 
     .card-app.card-decor .card-img-top {
