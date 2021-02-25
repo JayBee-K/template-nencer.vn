@@ -1171,6 +1171,9 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
         padding: 10px 0;
     }
 
+    .block-banner .swiper-wrapper {
+        height: 400px;
+    }
 
     .block-banner .swiper-slide {
         padding: 15px 0;
