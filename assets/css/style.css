@@ -1210,7 +1210,6 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
         height: 120px;
     }
 
-
     .card-solution .card-body {
         padding: 15px 5px 0;
     }
@@ -1227,12 +1226,16 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     }
 
     .card-app {
-        height: auto;
+        height: 300px;
     }
 
     .card-app.card-decor .card-img-top {
         width: 100%;
         max-width: 100%;
+    }
+
+    .block-website .swiper-slide {
+        height: auto;
     }
 
     footer .toggled-footer {
