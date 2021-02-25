@@ -57,8 +57,13 @@ textarea:focus {
     color: #fff;
     padding: 0;
     outline: none !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
+    -webkit-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out !important;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out !important;
+    -o-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
     transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out !important;
     position: relative;
     border: 0;
     overflow: hidden;
@@ -79,6 +84,8 @@ textarea:focus {
     left: 0;
     width: 100%;
     padding: 8px 25px;
+    -webkit-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
     transition: 0.3s all ease-out;
     z-index: 2;
 }
@@ -95,6 +102,8 @@ textarea:focus {
     width: 0;
     position: absolute;
     content: "";
+    -webkit-transition: 0.5s all ease-out;
+    -o-transition: 0.5s all ease-out;
     transition: 0.5s all ease-out;
 }
 
@@ -127,10 +136,13 @@ textarea:focus {
 
 .swiper-container [class*=swiper-button] {
     outline: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
     color: #fff;
     opacity: 0;
     visibility: hidden;
+    -webkit-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out;
     cursor: pointer;
 }
@@ -175,6 +187,8 @@ textarea:focus {
     height: 3px;
     bottom: 50px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     background: var(--color-main);
 }
@@ -198,12 +212,15 @@ textarea:focus {
     height: 20px;
     left: 0;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     background: #e0e0e0;
 }
 
 .header-top .currency > a {
     color: var(--text-dark);
+    -o-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out;
     -webkit-transition: .3s all ease-in-out;
 }
@@ -220,9 +237,11 @@ textarea:focus {
     width: 120px;
     opacity: 0;
     visibility: hidden;
+    -o-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out;
     -webkit-transition: .3s all ease-in-out;
     background: #fff;
+    -webkit-box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
     box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
     border: 1px solid #e9e9e9;
     z-index: 7;
@@ -256,6 +275,7 @@ textarea:focus {
 
 .header-top .currency > ul > li > a {
     padding: 8px 15px;
+    -o-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out;
     -webkit-transition: .3s all ease-in-out;
     width: 100%;
@@ -293,6 +313,8 @@ textarea:focus {
     display: inline-block;
     font-weight: 700;
     color: #232323;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
     transition: .3s all ease;
     text-transform: uppercase;
     border-bottom: 3px solid transparent;
@@ -308,12 +330,16 @@ textarea:focus {
     top: 120%;
     right: 0;
     min-width: 220px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     opacity: 0;
     visibility: visible;
+    -o-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out;
     -webkit-transition: .3s all ease-in-out;
     background: #fff;
+    -webkit-box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
     box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
     border: 1px solid #e9e9e9;
     z-index: 2;
@@ -325,6 +351,7 @@ textarea:focus {
 
 .header-bottom .navigation > ul > li > ul > li > a {
     padding: 8px 15px;
+    -o-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out;
     -webkit-transition: .3s all ease-in-out;
     width: 100%;
@@ -407,18 +434,22 @@ textarea:focus {
 }
 
 .block-banner .swiper-slide-active .slide-desc {
+    -webkit-animation: fadeInDown 1s;
     animation: fadeInDown 1s;
 }
 
 .block-banner .swiper-slide-active .slide-title {
+    -webkit-animation: fadeInDown 1.5s;
     animation: fadeInDown 1.5s;
 }
 
 .block-banner .swiper-slide-active .slide-button {
+    -webkit-animation: fadeInDown 2s;
     animation: fadeInDown 2s;
 }
 
 .block-banner .swiper-slide-active .slide-image {
+    -webkit-animation: zoomIn 2s;
     animation: zoomIn 2s;
 }
 
@@ -431,8 +462,6 @@ textarea:focus {
     width: auto;
     max-width: 100%;
     -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    -ms-transition: all ease .5s;
     -o-transition: all ease .5s;
     transition: all ease .5s;
 }
@@ -449,8 +478,6 @@ textarea:focus {
     pointer-events: none;
     filter: alpha(opacity=0);
     -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    -ms-transition: all ease .5s;
     -o-transition: all ease .5s;
     transition: all ease .5s;
     border-radius: 50%;
@@ -473,18 +500,13 @@ textarea:focus {
     left: 50%;
     top: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     display: inline-block;
     width: 8px;
     height: 8px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%;
     -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    -ms-transition: all ease .5s;
     -o-transition: all ease .5s;
     transition: all ease .5s;
     opacity: 0;
@@ -493,6 +515,8 @@ textarea:focus {
 }
 
 .card-decor:hover .card-img-top {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -529,6 +553,8 @@ textarea:focus {
 
 .card-solution .card-body .card-title {
     color: #232323;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
     transition: .3s all ease;
 }
 
@@ -557,6 +583,8 @@ textarea:focus {
 
 .card-module .card-body .card-title {
     color: #232323;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
     transition: .3s all ease;
     font-size: 1.1em;
 }
@@ -593,6 +621,8 @@ textarea:focus {
     color: var(--text-dark);
     font-size: 1.2em;
     font-weight: 600;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
     transition: .3s all ease;
 }
 
@@ -626,6 +656,8 @@ textarea:focus {
     width: 100%;
     height: 100%;
     background: #fff center center/cover no-repeat;
+    -webkit-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out;
 }
 
@@ -685,9 +717,10 @@ textarea:focus {
     font-size: 1.1em;
     font-weight: 900;
     -webkit-transition: opacity 0.24s ease-in-out;
-    -moz-transition: opacity 0.24s ease-in-out;
+    -o-transition: opacity 0.24s ease-in-out;
     transition: opacity 0.24s ease-in-out;
     overflow: hidden;
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
     display: -webkit-box;
@@ -697,6 +730,7 @@ textarea:focus {
 .card-blog .card-body .card-text {
     margin-top: 0;
     overflow: hidden;
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     -webkit-line-clamp: 3;
     display: -webkit-box;
@@ -732,8 +766,14 @@ textarea:focus {
 
 .block-website .website-item .website-image {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -759,7 +799,6 @@ textarea:focus {
     background-color: #e8eaed;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
-    -moz-transition: all .3s ease;
     transition: all .3s ease;
 }
 
@@ -769,10 +808,12 @@ textarea:focus {
     background-color: #fff;
     width: 100px !important;
     height: 100px !important;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
     transition: all .5s ease;
     -webkit-box-shadow: 0 0 12px 0 rgba(32, 46, 60, .06);
-    -moz-box-shadow: 0 0 12px 0 rgba(32, 46, 60, .06);
     box-shadow: 0 0 12px 0 rgba(32, 46, 60, .06);
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
     position: relative;
     text-align: center;
@@ -794,7 +835,6 @@ textarea:focus {
     background-color: #fff;
     padding: 20px 10px 25px;
     -webkit-box-shadow: 0 0 12px 0 rgba(32, 46, 60, .06);
-    -moz-box-shadow: 0 0 12px 0 rgba(32, 46, 60, .06);
     box-shadow: 0 0 12px 0 rgba(32, 46, 60, .06);
     transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
@@ -819,6 +859,7 @@ textarea:focus {
     line-height: 1.6;
     margin-top: 5px;
     overflow: hidden;
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     -webkit-line-clamp: 5;
     display: -webkit-box;
@@ -841,8 +882,14 @@ textarea:focus {
 }
 
 .block-website .website-item .website-content .website-meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     color: var(--text-gray);
     transition: all .4s ease-in-out;
@@ -858,6 +905,8 @@ textarea:focus {
 }
 
 .block-website .website-item:hover .website-image > a {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -878,11 +927,15 @@ textarea:focus {
 .block-wrapper .card-collapse .card-header a {
     color: var(--text-dark);
     font-weight: 700;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
     transition: .3s all ease;
     font-size: 1.1em;
 }
 
 .block-wrapper .card-collapse .card-header a > i {
+    -webkit-transition: .3s transform ease;
+    -o-transition: .3s transform ease;
     transition: .3s transform ease;
 }
 
@@ -892,6 +945,8 @@ textarea:focus {
 }
 
 .block-wrapper .card-collapse .card-header a[aria-expanded=true] > i {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
@@ -924,6 +979,8 @@ footer .footer-inner .footer-list ul li a {
     color: var(--text-dark);
     font-size: 1em;
     text-decoration: none;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
     transition: .3s all ease;
 }
 
@@ -934,13 +991,21 @@ footer .footer-inner .footer-list ul li:hover a {
 footer .footer-inner .footer-social ul li a {
     width: 34px;
     height: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background-color: var(--text-dark);
     border-radius: 50%;
     color: #fff;
     margin-right: 5px;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
     transition: .3s all ease;
 }
 
@@ -988,6 +1053,8 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
         position: absolute;
         top: 50%;
         right: 0;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         z-index: 1000;
     }
@@ -1045,6 +1112,7 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
         transition: 0.3s all ease-out;
         visibility: hidden;
         background: #fff;
+        -webkit-box-shadow: 0 4px 20px #8891a9;
         box-shadow: 0 4px 20px #8891a9;
     }
 
@@ -1054,8 +1122,14 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     }
 
     .header-bottom .navigation > ul > li > a {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         padding: 10px 15px;
         line-height: unset;
@@ -1070,6 +1144,7 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
         max-width: 100%;
         opacity: 1;
         visibility: visible;
+        -webkit-box-shadow: none;
         box-shadow: none;
         background-color: #f8f9fa !important;
     }
@@ -1176,10 +1251,14 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
         text-align: center;
         font-size: 1em;
         color: #000;
+        -webkit-transition: .2s all ease;
+        -o-transition: .2s all ease;
         transition: .2s all ease;
     }
 
     footer .toggled-footer[aria-expanded=true]:after {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
         transform: rotate(180deg);
     }
 
