@@ -1234,6 +1234,7 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
         max-width: 100%;
     }
 
+    .block-website .swiper-wrapper,
     .block-website .swiper-slide {
         height: auto;
     }
