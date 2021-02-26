@@ -664,7 +664,7 @@ textarea:focus {
 }
 
 .card-module .card-body {
-    padding: 30px 15px 0;
+    padding: 15px 15px 0;
     text-align: center;
 }
 
@@ -1007,6 +1007,60 @@ textarea:focus {
 .block-website .website-item:hover .website-content .website-price,
 .block-website .website-item:hover .website-content .website-meta {
     color: #fff;
+}
+
+@media screen and (min-width: 525px) {
+    .card-website {
+        height: 100%;
+    }
+}
+
+.card-website .card-body img {
+    max-width: 100px;
+    width: 100%;
+    transition: .2s all ease;
+}
+
+.card-website .card-body h3 {
+    color: var(--color-hover);
+    transition: .2s all ease;
+}
+
+.card-website .card-body img:hover {
+    opacity: 0.9;
+}
+
+.card-website .card-body h3:hover {
+    color: var(--color-main);
+}
+
+.card-website .meta span {
+    position: relative;
+    display: block;
+}
+
+.card-website .meta span:last-of-type {
+    margin-left: 20px;
+}
+
+.card-website .meta span:last-of-type:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #6c757d;
+    top: 54%;
+    left: -12px;
+    transform: translateY(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.card-website .card-text {
+    line-height: 1.8;
+    color: #454545;
 }
 
 /* End Block website */
