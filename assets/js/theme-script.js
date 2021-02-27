@@ -1,6 +1,7 @@
 $(document).ready(function () {
 	let windowWidth = $(window).width();
 	if (windowWidth < 992) {
+		$('header .header-bottom .navigation > ul').prepend('<li><a href="javascript:void(0)" class="d-flex d-lg-none" id="close-menu"><i class="fas fa-times"></i></a></li>');
 		$("header .header-bottom .navigation > ul > li > ul").each(function (index) {
 			$(this).prev().attr({
 				"href": "#subMenu" + index,
@@ -14,8 +15,6 @@ $(document).ready(function () {
 		})
 	}
 	
-	$('header .header-bottom .navigation > ul').prepend('<li><a href="javascript:void(0)" class="d-flex d-lg-none" id="close-menu"><i class="fas fa-times"></i></a></li>');
-	
 	function callMenu() {
 		if ($('body').hasClass('show-navigation')) {
 			$('body').removeClass('show-navigation');
@@ -27,6 +26,16 @@ $(document).ready(function () {
 	$(document).on("click", "#hamburger, #close-menu, .header-overlay", function () {
 		callMenu();
 	});
+	
+	$('.input-effect').blur(function () {
+		$(this).val() != '' ? $(this).addClass('valid') : $(this).removeClass('valid');
+	});
+	
+	$('.callModal').click(function (e) {
+		console.log($('.modal-theme #' + $(this).data('name')));
+		$('.modal-template .modal').modal('hide');
+		$('.modal-template #' + $(this).data('name')).modal('show');
+	})
 	
 	const myBanner = new Swiper('#swiper-banner', {
 		loop: true,

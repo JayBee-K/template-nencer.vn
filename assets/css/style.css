@@ -90,10 +90,6 @@ textarea:focus {
     z-index: 2;
 }
 
-.btn-customize i {
-    vertical-align: 2px;
-}
-
 .btn-customize::before {
     top: 0;
     bottom: 0;
@@ -843,10 +839,6 @@ textarea:focus {
 
 /* End Card app */
 
-.block-website {
-    background: #f7f9fe center center/100% no-repeat;
-}
-
 .block-website .website-item {
     position: relative;
 }
@@ -1007,6 +999,28 @@ textarea:focus {
 .block-website .website-item:hover .website-content .website-price,
 .block-website .website-item:hover .website-content .website-meta {
     color: #fff;
+}
+
+.page-website .card-website .card-body {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+.page-website .card-website .card-body h3 {
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+.page-website .card-website .card-body .meta {
+    font-size: .9em;
+}
+
+.page-website .card-website .card-body .card-action {
+    flex-direction: column;
+}
+
+.page-website .card-website .card-body .card-action .btn {
+    margin-top: 10px;
 }
 
 @media screen and (min-width: 525px) {
@@ -1187,6 +1201,430 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
 }
 
 /* End footer */
+
+/* Modal */
+.modal-template .modal.fade .modal-dialog {
+    -webkit-transform: translate(0, 0) scale(.5);
+    transform: translate(0, 0) scale(.5);
+}
+
+.modal-template .modal.fade.show .modal-dialog {
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+}
+
+.login-wrapper {
+    background: #fff;
+    border: 0;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, .12), -10px -10px 20px rgba(255, 255, 255, .12);
+}
+
+.login-header {
+    border-radius: 0;
+    border-bottom: 0;
+    padding-top: 100px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.login-header:before,
+.login-header:after {
+    position: absolute;
+    content: "";
+    display: block;
+}
+
+.login-header:before {
+    transform: rotate(162deg);
+    top: -220px;
+    left: -58px;
+    width: 600px;
+    height: 280px;
+    background: var(--color-hover);
+    opacity: .8;
+}
+
+.login-header:after {
+    transform: rotate(-155deg);
+    top: -165px;
+    right: -70px;
+    width: 350px;
+    height: 230px;
+    background: var(--color-main);
+    opacity: .7;
+}
+
+.login-header img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.login-header h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-top: 20px;
+    color: var(--color-hover);
+}
+
+.form-effect {
+    position: relative;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 0 15px 15px;
+}
+
+.form-effect .group-effect {
+    position: relative;
+    height: 44px;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-effect .group-effect .input-effect {
+    height: 100%;
+    width: 100%;
+    background: #f1f1f1;
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #1f2d3d;
+    font-size: 1.1em;
+    padding-left: 15px;
+    margin-top: 0;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+.form-effect .group-textarea.group-effect {
+    min-height: 100px;
+}
+
+.form-effect .group-textarea.group-effect .input-effect {
+    padding-top: 10px;
+    resize: none;
+}
+
+.form-effect .group-effect .input-effect[type="password"] {
+    padding-right: 30px;
+}
+
+.form-effect .viewPass-effect {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    right: 7px;
+    color: #a9a9a9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.form-effect .group-effect .label-effect {
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    height: 100%;
+    pointer-events: none;
+    margin-bottom: 0;
+    font-size: 1.1em;
+    line-height: 44px;
+    color: #454545;
+    opacity: .8;
+    -o-transition: 0.2s all ease-out;
+    transition: 0.2s all ease-out;
+    -webkit-transition: 0.2s all ease-out;
+}
+
+.form-effect .group-effect .label-effect i {
+    line-height: 1;
+    font-size: 0.9em;
+    margin-right: 4px;
+}
+
+.form-effect .group-effect .input-effect option:checked,
+.form-effect .group-effect .input-effect:focus,
+.form-effect .group-effect .input-effect.valid {
+    background: #fff;
+    border-color: #e9e9e9;
+}
+
+.form-effect .group-effect .input-effect:focus + .label-effect,
+.form-effect .group-effect .input-effect.valid + .label-effect {
+    -webkit-transform: translateY(-35px);
+    -ms-transform: translateY(-35px);
+    transform: translateY(-35px);
+    font-size: 1em;
+    color: #a9a9a9;
+    background: #fff;
+    display: inline-block;
+    opacity: 1;
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    left: 10px;
+}
+
+.form-effect .group-textarea.group-effect .input-effect:focus + .label-effect,
+.form-effect .group-textarea.group-effect .input-effect.valid + .label-effect {
+    -webkit-transform: translateY(-90px);
+    -ms-transform: translateY(-90px);
+    transform: translateY(-90px);
+}
+
+.form-effect .form-button {
+    margin-top: 30px;
+    text-align: left;
+}
+
+/* End Modal */
+
+/* Page */
+.banner-page {
+    background: center center/cover no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-page:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: "";
+    background: rgba(0, 0, 0, .5);
+}
+
+.banner-page .heading-desc {
+    line-height: 1.7;
+}
+
+.block-breadcrumb .breadcrumb {
+    margin-bottom: 0;
+    width: 100%;
+    background: transparent;
+}
+
+.block-breadcrumb .breadcrumb a {
+    color: var(--text-dark);
+}
+
+.block-breadcrumb .breadcrumb .active a {
+    color: var(--text-gray);
+}
+
+.block-sidebar {
+    position: sticky;
+    top: 5px;
+}
+
+.block-sidebar .sidebar-item + .sidebar-item {
+    margin-top: 30px;
+}
+
+.block-sidebar .sidebar-item {
+    background: #f9f9f9;
+}
+
+.block-sidebar .sidebar-title {
+    background: var(--color-hover);
+    border: 1px solid #032251;
+}
+
+.block-sidebar .sidebar-title h6 {
+    font-size: 1em;
+}
+
+.block-sidebar .sidebar-main ul li:not(:last-of-type) {
+    border-bottom: 1px dotted #cecece;
+}
+
+.block-sidebar .sidebar-main ul li a {
+    display: block;
+    color: var(--text-dark);
+    padding: 8px 10px;
+    transition: .2s all ease;
+}
+
+.block-sidebar .sidebar-main ul li:hover a {
+    color: var(--color-hover);
+}
+
+.block-single .box-meta {
+    color: var(--text-gray);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.block-single .box-meta span {
+    position: relative;
+    display: block;
+}
+
+.block-single .box-meta span:not(:last-of-type) {
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.block-single .box-meta span:not(:last-of-type):after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 10px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .2);
+}
+
+.block-single .box-meta span b {
+    color: var(--text-dark);
+}
+
+.block-single .box-price {
+    margin-top: 10px;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #d22323;
+}
+
+.block-single .single-meta {
+    color: var(--text-gray);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.block-single .single-meta span {
+    position: relative;
+    display: block;
+}
+
+.block-single .single-meta span:not(:last-of-type) {
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.block-single .single-meta span:not(:last-of-type):after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 10px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .2);
+}
+
+.block-single .single-meta span b {
+    color: var(--text-dark);
+}
+
+
+.block-single .single-content {
+    line-height: 1.8;
+    color: #676767;
+    margin-top: 25px;
+}
+
+.block-single .single-content blockquote {
+    display: block;
+    background: #f9f9f9;
+    border: 1px solid #e9e9e9;
+    border-left: 3px solid var(--color-hover);
+    color: var(--text-dark);
+    padding: 10px;
+}
+
+.block-single .single-content p:last-of-type {
+    margin-bottom: 0;
+}
+
+.block-single .heading-related {
+    padding: 3px 0 3px 10px;
+    border-left: 5px solid var(--color-hover);
+    color: #000;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+/* Contact page */
+.block-contact .contact-title {
+    padding: 3px 0 3px 10px;
+    border-left: 5px solid var(--color-hover);
+    color: #000;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+.block-contact .contact-item {
+    height: 80px;
+}
+
+.block-contact .contact-item h6 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 900;
+    color: var(--color-hover);
+}
+
+.block-contact .contact-item p {
+    font-size: 1.15em;
+    color: #717171;
+}
+
+.block-contact .contact-form input {
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+    background: #f9f9f9;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.block-contact .contact-form textarea {
+    width: 100%;
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ced4da;
+    background: #f9f9f9;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+}
+
+.block-contact .contact-form input:focus,
+.block-contact .contact-form textarea:focus {
+    border-color: var(--color-main);
+}
+
+.block-contact .contact-form .btn {
+    background: var(--color-hover);
+    border-color: var(--color-hover);
+    transition: .2s all ease;
+}
+
+.block-contact .contact-form .btn:hover {
+    opacity: .9;
+}
+
+
+/* End page */
 
 @media screen and (max-width: 991px) {
     .header-bottom .logo .hamburger {

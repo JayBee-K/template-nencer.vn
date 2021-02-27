@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e788b272-1d2b-49af-bcc3-92d93d064afa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/plugin/swiper/swiper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/plugin/swiper/swiper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outsourcing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/single-module.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/single-solution-outsourcing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solution.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/background01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/theme-script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/theme-script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -12,6 +24,14 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,7 +47,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Source-aNeo\template-nencer.vn" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -38,7 +64,9 @@
       <option name="presentableId" value="Default" />
       <updated>1614256017796</updated>
       <workItem from="1614256018983" duration="170000" />
-      <workItem from="1614331735592" duration="1920000" />
+      <workItem from="1614331735592" duration="2547000" />
+      <workItem from="1614388177022" duration="98000" />
+      <workItem from="1614404683912" duration="9141000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,1009 @@
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+	
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	
+	<meta name="twitter:card" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:creator" content="">
+	
+	<title>Home - Nencer.vn</title>
+	
+	<link rel="stylesheet" href="./assets/plugin/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugin/swiper/swiper.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/plugin/animate.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<div class="modal-template">
+	<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content border-0">
+				<div class="login-main">
+					<div class="login-wrapper">
+						<div class="login-inner">
+							<div class="login-header">
+								<img src="./assets/images/logo.png" alt="Login Kansaibook">
+								<h1>Đăng nhập</h1>
+							</div>
+							<form class="form-effect" action="">
+								<div class="group-effect">
+									<input type="email" id="emailLogin" class="input-effect">
+									<label class="label-effect" for="emailLogin">
+										<i class="fas fa-envelope"></i>
+										<span>Email</span>
+									</label>
+								</div>
+								<div class="group-effect">
+									<input type="password" tabindex="1" name="" id="passwordLogin" class="input-effect"
+									       autocomplete="off" required="">
+									<label class="label-effect" for="passwordLogin">
+										<i class="fas fa-lock"></i>
+										<span>Mật khẩu</span>
+									</label>
+								</div>
+								<p class="text-muted">Chưa có tài khoản,
+									<a href="javascript:void(0)" class="callModal" data-name="modalRegister">
+										đăng ký ngay bây giờ</a>
+								</p>
+								<div class="form-button d-flex align-items-end justify-content-between">
+									<button type="submit" class="btn btn-primary btn-customize">
+										<span>
+											Đăng nhập
+											<i class="fas fa-sign-in-alt"></i>
+										</span>
+									</button>
+									<a href="javascript:void(0)" class="text-muted" data-dismiss="modal">Đóng</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalRegister" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content border-0">
+				<div class="login-main">
+					<div class="login-wrapper">
+						<div class="login-inner">
+							<div class="login-header">
+								<img src="./assets/images/logo.png" alt="Login Kansaibook">
+								<h1>Đăng ký</h1>
+							</div>
+							<form class="form-effect" action="">
+								<div class="group-effect">
+									<input type="text" id="fullnameRegister" class="input-effect">
+									<label class="label-effect" for="fullnameRegister">
+										<i class="fas fa-envelope"></i>
+										<span>Fullname</span>
+									</label>
+								</div>
+								<div class="group-effect">
+									<input type="email" id="emailRegister" class="input-effect">
+									<label class="label-effect" for="emailRegister">
+										<i class="fas fa-envelope"></i>
+										<span>Email</span>
+									</label>
+								</div>
+								<div class="group-effect">
+									<input type="password" tabindex="1" name="" id="passwordRegister"
+									       class="input-effect"
+									       autocomplete="off" required="">
+									<label class="label-effect" for="passwordRegister">
+										<i class="fas fa-lock"></i>
+										<span>Mật khẩu</span>
+									</label>
+								</div>
+								<p class="text-muted">
+									Đã có tài khoản,
+									<a href="javascript:void(0)" class="callModal" data-name="modalLogin">
+										Đăng nhập ngay
+									</a>
+								</p>
+								<div class="form-button d-flex align-items-end justify-content-between">
+									<button type="submit" class="btn btn-primary btn-customize">
+										<span>
+											Đăng Ký
+											<i class="fas fa-sign-out-alt"></i>
+										</span>
+									</button>
+									<a href="javascript:void(0)" class="text-muted" data-dismiss="modal">Đóng</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<header id="header">
+	<div class="header-top border-bottom bg-light">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-sm-6 col-8">
+					<div class="d-flex align-items-center justify-content-start">
+						<div class="language d-flex align-items-center justify-content-center py-2">
+							<a href="javascript:void(0)">
+								<span>
+									<img src="./assets/images/language/vi.png" alt="">
+									Vietnamese
+								</span>
+								<i class="fas fa-angle-down"></i>
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/vi.png" alt="">
+											Vietnamese
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/en.png" alt="">
+											English
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/japan.png" alt="">
+											Japanese
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/vi.png" alt="">
+											Vietnamese
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/en.png" alt="">
+											English
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/japan.png" alt="">
+											Japanese
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/vi.png" alt="">
+											Vietnamese
+										</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="currency py-2 position-relative py-3 pl-3 ml-3">
+							<a href="javascript:void(0)">
+								VND <i class="fas fa-angle-down"></i>
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a class="d-block" href="javascript:void(0)">VND</a>
+								</li>
+								<li>
+									<a class="d-block" href="javascript:void(0)">USD</a>
+								</li>
+								<li>
+									<a class="d-block" href="javascript:void(0)">EUR</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-4">
+					<div class="text-md-right text-center py-2 d-flex align-items-center justify-content-end">
+						<a href="#modalLogin" data-toggle="modal"
+						   class="btn btn-outline-primary btn-customize mr-2 d-none d-md-flex"><span>Đăng nhập</span></a>
+						<a href="#modalRegister" data-toggle="modal"
+						   class="btn btn-primary btn-customize d-none d-md-flex"><span>Bắt đầu</span></a>
+						<a href="#modalLogin" data-toggle="modal"
+						   class="btn btn-primary btn-customize d-flex d-md-none"><span>Tài khoản</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-bottom bg-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="logo">
+						<a href="#" class="d-inline-block">
+							<img src="./assets/images/logo.png" alt="Logo - Nencer.vn">
+						</a>
+						<div class="hamburger" id="hamburger">
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="navigation">
+						<ul class="list-unstyled mb-0 d-lg-flex align-items-center justify-content-end" id="hasMenu">
+							<li>
+								<a href="index.html">
+									Trang chủ
+								</a>
+							</li>
+							<li>
+								<a href="app.html">
+									Phần mềm
+								</a>
+							</li>
+							<li>
+								<a href="module.html">
+									Mô-đun
+								</a>
+							</li>
+							<li>
+								<a href="solution.html">
+									Giải pháp
+								</a>
+							</li>
+							<li>
+								<a href="outsourcing.html">
+									Outsourcing
+								</a>
+							</li>
+							<li>
+								<a href="service.html">
+									Dịch vụ
+									<i class="fas fa-angle-down"></i>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="single-service.html">
+											Tên miền
+										</a>
+									</li>
+									<li>
+										<a href="single-service.html">
+											Hosting
+										</a>
+									</li>
+									<li>
+										<a href="single-service.html">
+											Cloud Vps
+										</a>
+									</li>
+									<li>
+										<a href="single-service.html">
+											Chứng thư SSL
+										</a>
+									</li>
+									<li>
+										<a href="single-service.html">
+											Dịch vụ Email
+										</a>
+									</li>
+									<li>
+										<a href="single-service.html">
+											Dedicated Server
+										</a>
+									</li>
+									<li>
+										<a href="single-service.html">
+											Gói hỗ trợ
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="contact.html">
+									Liên hệ
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-overlay"></div>
+	</div>
+</header>
+<div class="main">
+	<section class="banner-page" style="background-image: url('./assets/images/banner-page.jpg')">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="heading-page text-left position-relative py-5">
+						<h2 class="heading-title text-white font-weight-bolder text-uppercase h3">
+							Cổng thanh toán Paypal
+						</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="block-breadcrumb bg-white border-bottom">
+		<div class="container">
+			<div class="row">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">
+						<a href="index.html">Trang chủ</a>
+					</li>
+					<li class="breadcrumb-item active">
+						<a href="#">Mô đun</a>
+					</li>
+				</ol>
+			</div>
+		</div>
+	</section>
+	<section class="block-single bg-white py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<div class="single-main">
+						<div class="single-box">
+							<div class="row">
+								<div class="col-md-3 col-lg-2">
+									<div class="box-image">
+										<img class="w-100" src="./assets/images/module/paypal.jpg"
+										     alt="Cổng thanh toán Paypal">
+									</div>
+								</div>
+								<div class="col-md-9 col-lg-10">
+									<div class="box-content">
+										<div class="box-title">
+											<h2 class="font-weight-bolder h4">Tích hợp cổng thanh toán Paypal vào
+												website của bạn</h2>
+										</div>
+										<div class="box-meta">
+											<span>Đăng bởi: <b>admin</b></span>
+											<span>Ngày đăng: <b>27-02-2021</b></span>
+											<span>Lượt xem: <b>4105</b></span>
+										</div>
+										<div class="box-price">
+											<i class="fas fa-tag fa-rotate-90"></i>
+											2.000.000 VNĐ
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="single-content">
+							<blockquote>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi esse explicabo itaque
+								laudantium, maxime, nihil quasi qui quidem quis repudiandae soluta sunt vero voluptas!
+								Culpa dolorem eligendi esse est, expedita iste minus nulla quasi quos rem, repudiandae
+								rerum ut. Minima!
+							</blockquote>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi esse explicabo itaque
+								laudantium, maxime, nihil quasi qui quidem quis repudiandae soluta sunt vero voluptas!
+								Culpa dolorem eligendi esse est, expedita iste minus nulla quasi quos rem, repudiandae
+								rerum ut. Minima!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi esse explicabo itaque
+								laudantium, maxime, nihil quasi qui quidem quis repudiandae soluta sunt vero voluptas!
+								Culpa dolorem eligendi esse est, expedita iste minus nulla quasi quos rem, repudiandae
+								rerum ut. Minima!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi esse explicabo itaque
+								laudantium, maxime, nihil quasi qui quidem quis repudiandae soluta sunt vero voluptas!
+								Culpa dolorem eligendi esse est, expedita iste minus nulla quasi quos rem, repudiandae
+								rerum ut. Minima!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi esse explicabo itaque
+								laudantium, maxime, nihil quasi qui quidem quis repudiandae soluta sunt vero voluptas!
+								Culpa dolorem eligendi esse est, expedita iste minus nulla quasi quos rem, repudiandae
+								rerum ut. Minima!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi esse explicabo itaque
+								laudantium, maxime, nihil quasi qui quidem quis repudiandae soluta sunt vero voluptas!
+								Culpa dolorem eligendi esse est, expedita iste minus nulla quasi quos rem, repudiandae
+								rerum ut. Minima!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi esse explicabo itaque
+								laudantium, maxime, nihil quasi qui quidem quis repudiandae soluta sunt vero voluptas!
+								Culpa dolorem eligendi esse est, expedita iste minus nulla quasi quos rem, repudiandae
+								rerum ut. Minima!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi esse explicabo itaque
+								laudantium, maxime, nihil quasi qui quidem quis repudiandae soluta sunt vero voluptas!
+								Culpa dolorem eligendi esse est, expedita iste minus nulla quasi quos rem, repudiandae
+								rerum ut. Minima!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi esse explicabo itaque
+								laudantium, maxime, nihil quasi qui quidem quis repudiandae soluta sunt vero voluptas!
+								Culpa dolorem eligendi esse est, expedita iste minus nulla quasi quos rem, repudiandae
+								rerum ut. Minima!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi esse explicabo itaque
+								laudantium, maxime, nihil quasi qui quidem quis repudiandae soluta sunt vero voluptas!
+								Culpa dolorem eligendi esse est, expedita iste minus nulla quasi quos rem, repudiandae
+								rerum ut. Minima!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi esse explicabo itaque
+								laudantium, maxime, nihil quasi qui quidem quis repudiandae soluta sunt vero voluptas!
+								Culpa dolorem eligendi esse est, expedita iste minus nulla quasi quos rem, repudiandae
+								rerum ut. Minima!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi esse explicabo itaque
+								laudantium, maxime, nihil quasi qui quidem quis repudiandae soluta sunt vero voluptas!
+								Culpa dolorem eligendi esse est, expedita iste minus nulla quasi quos rem, repudiandae
+								rerum ut. Minima!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="block-sidebar">
+						<div class="sidebar-item">
+							<div class="sidebar-title text-left text-white p-2">
+								<h6 class="text-uppercase mb-0 font-weight-bolder">Hướng dẫn</h6>
+							</div>
+							<div class="sidebar-main border border-top-0">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="single-solution-outsourcing.html">
+											<i class="fas fa-angle-right"></i>
+											Hướng Dẫn Cài Đặt IonCube Loader Trên Máy Chủ Linux
+										</a>
+									</li>
+									<li>
+										<a href="single-solution-outsourcing.html">
+											<i class="fas fa-angle-right"></i>
+											Hướng dẫn cài đặt vestacp trên Ubuntu 18 để chạy Laravel
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="sidebar-item">
+							<div class="sidebar-title text-left text-white p-2">
+								<h6 class="text-uppercase mb-0 font-weight-bolder">Gia công phần mềm</h6>
+							</div>
+							<div class="sidebar-main border border-top-0">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="single-solution-outsourcing.html">
+											<i class="fas fa-angle-right"></i>
+											Lập trình PHP Laravel
+										</a>
+									</li>
+									<li>
+										<a href="single-solution-outsourcing.html">
+											<i class="fas fa-angle-right"></i>
+											Lập trình Java Spring Boot
+										</a>
+									</li>
+									<li>
+										<a href="single-solution-outsourcing.html">
+											<i class="fas fa-angle-right"></i>
+											Lập trình Python
+										</a>
+									</li>
+									<li>
+										<a href="single-solution-outsourcing.html">
+											<i class="fas fa-angle-right"></i>
+											Lập trình ứng dụng di động
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="sidebar-item">
+							<div class="sidebar-title text-left text-white p-2">
+								<h6 class="text-uppercase mb-0 font-weight-bolder">Giải pháp</h6>
+							</div>
+							<div class="sidebar-main border border-top-0">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="single-solution-outsourcing.html">
+											<i class="fas fa-angle-right"></i>
+											Thanh toán trực tuyến
+										</a>
+									</li>
+									<li>
+										<a href="single-solution-outsourcing.html">
+											<i class="fas fa-angle-right"></i>
+											Học trực tuyến
+										</a>
+									</li>
+									<li>
+										<a href="single-solution-outsourcing.html">
+											<i class="fas fa-angle-right"></i>
+											Blockchain
+										</a>
+									</li>
+									<li>
+										<a href="single-solution-outsourcing.html">
+											<i class="fas fa-angle-right"></i>
+											Quản trị bán hàng
+										</a>
+									</li>
+									<li>
+										<a href="single-solution-outsourcing.html">
+											<i class="fas fa-angle-right"></i>
+											Số hóa tài liệu
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="block-related pt-3 mt-5 border-top">
+						<div class="heading-related">
+							Các module khác
+						</div>
+						<div class="row mt-3">
+							<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+								<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+									<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+										<img class="card-img-top" src="./assets/images/module/paypal.jpg"
+										     alt="Cổng thanh toán Paypal">
+										<div class="card-mask"></div>
+										<a href="single-module.html" class="card-link-animation">
+											<span></span>
+											<span></span>
+											<span></span>
+										</a>
+									</div>
+									<div class="card-body">
+										<a href="single-module.html">
+											<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
+												Paypal</h5>
+										</a>
+										<div class="card-price">
+											2.000.000 VNĐ
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+								<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+									<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto ">
+										<img class="card-img-top" src="./assets/images/module/nganluong.jpg"
+										     alt="Bảo mật hệ thống">
+										<div class="card-mask"></div>
+										<a href="single-module.html" class="card-link-animation">
+											<span></span>
+											<span></span>
+											<span></span>
+										</a>
+									</div>
+									<div class="card-body">
+										<a href="single-module.html">
+											<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán Ngân
+												Lượng</h5>
+										</a>
+										<div class="card-price">
+											1.000.000 VNĐ
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+								<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+									<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+										<img class="card-img-top" src="./assets/images/module/onepay.jpg"
+										     alt="Cổng thanh toán Onepay">
+										<div class="card-mask"></div>
+										<a href="single-module.html" class="card-link-animation">
+											<span></span>
+											<span></span>
+											<span></span>
+										</a>
+									</div>
+									<div class="card-body">
+										<a href="single-module.html">
+											<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
+												Onepay</h5>
+										</a>
+										<div class="card-price">
+											2.000.000 VNĐ
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+								<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+									<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+										<img class="card-img-top" src="./assets/images/module/momo_p.jpg"
+										     alt="Cổng thanh toán Momo">
+										<div class="card-mask"></div>
+										<a href="single-module.html" class="card-link-animation">
+											<span></span>
+											<span></span>
+											<span></span>
+										</a>
+									</div>
+									<div class="card-body">
+										<a href="single-module.html">
+											<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
+												Momo</h5>
+										</a>
+										<div class="card-price">
+											10.000.000 VNĐ
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+								<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+									<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+										<img class="card-img-top" src="./assets/images/module/zalopay.jpg"
+										     alt="Cổng thanh toán Zalopay">
+										<div class="card-mask"></div>
+										<a href="single-module.html" class="card-link-animation">
+											<span></span>
+											<span></span>
+											<span></span>
+										</a>
+									</div>
+									<div class="card-body">
+										<a href="single-module.html">
+											<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
+												Zalopay</h5>
+										</a>
+										<div class="card-price">
+											15.000.000 VNĐ
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+								<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+									<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+										<img class="card-img-top" src="./assets/images/module/vnpay.jpg"
+										     alt="Cổng thanh toán VNpay">
+										<div class="card-mask"></div>
+										<a href="single-module.html" class="card-link-animation">
+											<span></span>
+											<span></span>
+											<span></span>
+										</a>
+									</div>
+									<div class="card-body">
+										<a href="single-module.html">
+											<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
+												Vnpay</h5>
+										</a>
+										<div class="card-price">
+											8.000.000 VNĐ
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+								<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+									<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+										<img class="card-img-top" src="./assets/images/module/paypal.jpg"
+										     alt="Cổng thanh toán Paypal">
+										<div class="card-mask"></div>
+										<a href="single-module.html" class="card-link-animation">
+											<span></span>
+											<span></span>
+											<span></span>
+										</a>
+									</div>
+									<div class="card-body">
+										<a href="single-module.html">
+											<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
+												Paypal</h5>
+										</a>
+										<div class="card-price">
+											2.000.000 VNĐ
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+								<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+									<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto ">
+										<img class="card-img-top" src="./assets/images/module/nganluong.jpg"
+										     alt="Bảo mật hệ thống">
+										<div class="card-mask"></div>
+										<a href="single-module.html" class="card-link-animation">
+											<span></span>
+											<span></span>
+											<span></span>
+										</a>
+									</div>
+									<div class="card-body">
+										<a href="single-module.html">
+											<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán Ngân
+												Lượng</h5>
+										</a>
+										<div class="card-price">
+											1.000.000 VNĐ
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+								<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+									<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+										<img class="card-img-top" src="./assets/images/module/onepay.jpg"
+										     alt="Cổng thanh toán Onepay">
+										<div class="card-mask"></div>
+										<a href="single-module.html" class="card-link-animation">
+											<span></span>
+											<span></span>
+											<span></span>
+										</a>
+									</div>
+									<div class="card-body">
+										<a href="single-module.html">
+											<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
+												Onepay</h5>
+										</a>
+										<div class="card-price">
+											2.000.000 VNĐ
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+								<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+									<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+										<img class="card-img-top" src="./assets/images/module/momo_p.jpg"
+										     alt="Cổng thanh toán Momo">
+										<div class="card-mask"></div>
+										<a href="single-module.html" class="card-link-animation">
+											<span></span>
+											<span></span>
+											<span></span>
+										</a>
+									</div>
+									<div class="card-body">
+										<a href="single-module.html">
+											<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
+												Momo</h5>
+										</a>
+										<div class="card-price">
+											10.000.000 VNĐ
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+								<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+									<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+										<img class="card-img-top" src="./assets/images/module/zalopay.jpg"
+										     alt="Cổng thanh toán Zalopay">
+										<div class="card-mask"></div>
+										<a href="single-module.html" class="card-link-animation">
+											<span></span>
+											<span></span>
+											<span></span>
+										</a>
+									</div>
+									<div class="card-body">
+										<a href="single-module.html">
+											<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
+												Zalopay</h5>
+										</a>
+										<div class="card-price">
+											15.000.000 VNĐ
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+								<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+									<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+										<img class="card-img-top" src="./assets/images/module/vnpay.jpg"
+										     alt="Cổng thanh toán VNpay">
+										<div class="card-mask"></div>
+										<a href="single-module.html" class="card-link-animation">
+											<span></span>
+											<span></span>
+											<span></span>
+										</a>
+									</div>
+									<div class="card-body">
+										<a href="single-module.html">
+											<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
+												Vnpay</h5>
+										</a>
+										<div class="card-price">
+											8.000.000 VNĐ
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<footer id="footer" class="bg-light">
+	<div class="footer-top py-4 border-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="footer-inner">
+						<div class="footer-logo mt-2 mb-3">
+							<a href="index.html">
+								<img src="./assets/images/logo.png" alt="">
+							</a>
+						</div>
+						<h3 class="text-uppercase">THIẾT KẾ WEBSITE THÔNG MINH, ỨNG DỤNG DI ĐỘNG - NENCER</h3>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="footer-inner">
+						<a class="toggled-footer" data-toggle="collapse" href="#footer01">
+							<h3 class="text-uppercase">
+								Chính sách
+							</h3>
+						</a>
+						<div class="footer-list collapse" id="footer01">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">
+										Về chúng tôi
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Quy định sử dụng
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Quyền riêng tư
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Thanh toán
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="footer-inner">
+						<a class="toggled-footer" data-toggle="collapse" href="#footer02">
+							<h3 class="text-uppercase">
+								Thông tin
+							</h3>
+						</a>
+						<div class="footer-list collapse" id="footer02">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">
+										Quà tặng
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Hướng dẫn sử dụng
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Video hướng dẫn
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Vé hỗ trợ
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="footer-inner">
+						<h3 class="text-uppercase">Kết nối mxh</h3>
+						<div class="footer-social">
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start">
+								<li>
+									<a href="" class="facebook">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="twitter">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="google">
+										<i class="fab fa-google"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="youtube">
+										<i class="fab fa-youtube"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom py-4 border-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="footer-inner">
+						<h3 class="text-uppercase">Trụ sở chính</h3>
+						<div class="footer-info">
+							<ul class="mb-0">
+								<li>
+									Số 35/45 Trần Thái Tông, Cầu Giấy, Hà Nội
+								</li>
+								<li>
+									Hỗ trợ: <b>(+84) 024 62 757 222</b> (Thứ 2 đến Thứ 7). Hotline: <b>0943793984</b>
+								</li>
+								<li>
+									Email: <b>*support@nencer.com*(+84)</b>
+								</li>
+								<li>
+									Bản quyền 2010-2020 Nencer JSC.,. Giữ toàn quyền.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 mt-3 mt-md-0">
+					<div class="footer-inner">
+						<h3 class="text-uppercase">Văn phòng Hồ chí minh</h3>
+						<div class="footer-info">
+							<ul class="mb-0">
+								<li>
+									163/2A Trường Chinh, Phường Tân Hưng Thuận, Quận 12, TP HCM
+								</li>
+								<li>
+									Hỗ trợ: <b>0983973899</b>(Thứ 2 đến Thứ 6 từ 8h đến 18h; Thứ 7 từ 8h00 đến 17h00)
+								</li>
+								<li>
+									Email: <b>*sales@nencer.com*(+84)</b>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/swiper/swiper.js"></script>
+<script type="text/javascript" src="./assets/js/theme-script.js"></script>
+
+</body>
+</html>
