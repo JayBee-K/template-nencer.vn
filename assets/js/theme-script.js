@@ -35,7 +35,7 @@ $(document).ready(function () {
 		console.log($('.modal-theme #' + $(this).data('name')));
 		$('.modal-template .modal').modal('hide');
 		$('.modal-template #' + $(this).data('name')).modal('show');
-	})
+	});
 	
 	const myBanner = new Swiper('#swiper-banner', {
 		loop: true,
@@ -76,4 +76,23 @@ $(document).ready(function () {
 			},
 		}
 	});
-})
+	
+	$(document).on('click', '#return-to-top', function () {
+		$("html, body").animate({scrollTop: 0}, 600);
+		return false;
+	});
+});
+
+$(window).scroll(function () {
+	if ($(this).scrollTop() > 200) {
+		$('.float-button').fadeIn();
+		$('#return-to-top').fadeIn();
+	} else {
+		$('.float-button').fadeOut();
+		$('#return-to-top').fadeOut();
+	}
+	
+	if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+		$('.float-button').fadeOut();
+	}
+});
