@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e788b272-1d2b-49af-bcc3-92d93d064afa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/single-app.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/single-service.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/app.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/theme-script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/theme-script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module.html" beforeDir="false" afterPath="$PROJECT_DIR$/module.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outsourcing.html" beforeDir="false" afterPath="$PROJECT_DIR$/outsourcing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-module.html" beforeDir="false" afterPath="$PROJECT_DIR$/single-module.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-solution-outsourcing.html" beforeDir="false" afterPath="$PROJECT_DIR$/single-solution-outsourcing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solution.html" beforeDir="false" afterPath="$PROJECT_DIR$/solution.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-app.html" beforeDir="false" afterPath="$PROJECT_DIR$/single-app.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +58,8 @@
       <workItem from="1614404683912" duration="15904000" />
       <workItem from="1614474662154" duration="4187000" />
       <workItem from="1614490054008" duration="761000" />
-      <workItem from="1614493192099" duration="2853000" />
+      <workItem from="1614493192099" duration="3053000" />
+      <workItem from="1614503425078" duration="1204000" />
     </task>
     <servers />
   </component>

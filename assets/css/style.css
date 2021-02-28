@@ -1851,7 +1851,7 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     color: #0c8a0c;
 }
 
-.table-theme ul li{
+.table-theme ul li {
     margin-bottom: 10px;
     color: var(--text-gray);
 }
@@ -2278,10 +2278,100 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
         margin-bottom: 10px;
     }
 
+    .login-header:before {
+        top: -250px;
+    }
+
+    .login-header {
+        padding-top: 110px;
+    }
+
+    .login-header h1 {
+        font-size: 1.4em;
+    }
+
     #return-to-top {
         bottom: 20px;
         width: 40px;
         height: 40px;
     }
 
+    .float-button{
+        bottom: 20px;
+    }
+
+    .float-button .float-inner {
+        height: 40px;
+        width: 40px;
+        padding: 0;
+    }
+
+    .float-button .float-inner .float-text {
+        display: none;
+    }
+
+    .block-single .box-image img,
+    .single-app .app-top .app-image img {
+        display: block;
+        margin: 0 auto;
+        max-width: 50%;
+    }
+
+    .block-single .box-content {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block-single .box-content .box-title {
+        order: 1;
+    }
+
+    .block-single .box-content .box-price {
+        order: 2;
+        margin-bottom: 15px;
+    }
+
+    .block-single .box-content .box-meta {
+        order: 3;
+        flex-wrap: wrap;
+    }
+
+    .block-single .single-meta {
+        flex-wrap: wrap;
+    }
+
+    .block-single .box-content .box-title h2,
+    .block-single .single-title h2 {
+        font-size: 1.4em !important;
+        line-height: 1.7;
+    }
+
+    .block-sidebar {
+        position: relative;
+        top: unset;
+        margin-top: 30px;
+    }
+
+    .category-app .card-app {
+        height: auto;
+    }
+
+    .category-app .card-app .card-header {
+        max-width: 80%;
+        top: -35px;
+    }
+
+    .single-app .app-top .app-inner {
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 3px;
+        background: #f9f9f9;
+        border: 1px solid #e9e9e9;
+    }
+
+    .table-theme th,
+    .table-theme td{
+        white-space: nowrap;
+    }
 }
