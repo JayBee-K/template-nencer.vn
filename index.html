@@ -232,13 +232,45 @@
 					</div>
 				</div>
 				<div class="col-sm-6 col-4">
-					<div class="text-md-right text-center py-2 d-flex align-items-center justify-content-end">
+					<!-- Phần mới
+					     Thêm 2 class: action-user và postion-relative ở thẻ div phía dưới
+					     Thêm khối div position-relative ở dưới
+					 -->
+					<div class="action-user position-relative text-md-right text-center py-2 d-flex align-items-center justify-content-end">
 						<a href="#modalLogin" data-toggle="modal"
 						   class="btn btn-outline-primary btn-customize mr-2 d-none d-md-flex"><span>Đăng nhập</span></a>
 						<a href="#modalRegister" data-toggle="modal"
 						   class="btn btn-primary btn-customize d-none d-md-flex"><span>Bắt đầu</span></a>
 						<a href="#modalLogin" data-toggle="modal"
 						   class="btn btn-primary btn-customize d-flex d-md-none"><span>Tài khoản</span></a>
+						<!-- Đã đăng nhập -->
+						<div class="position-relative">
+							<a href="javascript:void(0)"
+							   class="user-login d-md-flex d-none"><span>Tài khoản</span></a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:void(0)">
+											<span>
+												Thông tin tài khoản
+											</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+											<span>
+												Đổi mật khẩu
+											</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+											<span>
+												Đăng xuất
+											</span>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
