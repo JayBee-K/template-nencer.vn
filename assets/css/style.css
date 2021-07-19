@@ -626,6 +626,10 @@ textarea:focus {
     transition: all ease .5s;
 }
 
+.category-app .card-decor .card-img-top {
+    max-height: 80px;
+}
+
 .card-decor .card-mask {
     content: '';
     position: absolute;
@@ -1107,6 +1111,10 @@ textarea:focus {
     padding-bottom: 15px !important;
 }
 
+.page-website .card-website .card-body img {
+    max-width: 70px;
+}
+
 .page-website .card-website .card-body h3 {
     font-size: 1.1em;
     line-height: 1.7;
@@ -1134,6 +1142,8 @@ textarea:focus {
     max-width: 100px;
     width: 100%;
     transition: .2s all ease;
+    flex-shrink: 0;
+    margin-right: 10px;
 }
 
 .card-website .card-body h3 {

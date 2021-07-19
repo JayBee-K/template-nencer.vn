@@ -1,0 +1,1673 @@
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+	
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	
+	<meta name="twitter:card" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:creator" content="">
+	
+	<title>Home - Nencer.vn</title>
+	
+	<link rel="stylesheet" href="./assets/plugin/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugin/swiper/swiper.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/plugin/animate.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<div class="modal-template">
+	<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content border-0">
+				<div class="login-main">
+					<div class="login-wrapper">
+						<div class="login-inner">
+							<div class="login-header">
+								<img src="./assets/images/logo.png">
+								<h1>Đăng nhập</h1>
+							</div>
+							<form class="form-effect" action="">
+								<div class="group-effect">
+									<input type="email" id="emailLogin" class="input-effect">
+									<label class="label-effect" for="emailLogin">
+										<i class="fas fa-envelope"></i>
+										<span>Email</span>
+									</label>
+								</div>
+								<div class="group-effect">
+									<input type="password" tabindex="1" name="" id="passwordLogin" class="input-effect"
+									       autocomplete="off" required="">
+									<label class="label-effect" for="passwordLogin">
+										<i class="fas fa-lock"></i>
+										<span>Mật khẩu</span>
+									</label>
+								</div>
+								<p class="text-muted">Chưa có tài khoản,
+									<a href="javascript:void(0)" class="callModal" data-name="modalRegister">
+										đăng ký ngay bây giờ</a>
+								</p>
+								<div class="form-button d-flex align-items-end justify-content-between">
+									<button type="submit" class="btn btn-primary btn-customize">
+										<span>
+											Đăng nhập
+											<i class="fas fa-sign-in-alt"></i>
+										</span>
+									</button>
+									<a href="javascript:void(0)" class="text-muted" data-dismiss="modal">Đóng</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalRegister" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content border-0">
+				<div class="login-main">
+					<div class="login-wrapper">
+						<div class="login-inner">
+							<div class="login-header">
+								<img src="./assets/images/logo.png">
+								<h1>Đăng ký</h1>
+							</div>
+							<form class="form-effect" action="">
+								<div class="group-effect">
+									<input type="text" id="fullnameRegister" class="input-effect">
+									<label class="label-effect" for="fullnameRegister">
+										<i class="fas fa-address-card"></i>
+										<span>Fullname</span>
+									</label>
+								</div>
+								<div class="group-effect">
+									<input type="email" id="emailRegister" class="input-effect">
+									<label class="label-effect" for="emailRegister">
+										<i class="fas fa-envelope"></i>
+										<span>Email</span>
+									</label>
+								</div>
+								<div class="group-effect">
+									<input type="password" tabindex="1" name="" id="passwordRegister"
+									       class="input-effect"
+									       autocomplete="off" required="">
+									<label class="label-effect" for="passwordRegister">
+										<i class="fas fa-lock"></i>
+										<span>Mật khẩu</span>
+									</label>
+								</div>
+								<p class="text-muted">
+									Đã có tài khoản,
+									<a href="javascript:void(0)" class="callModal" data-name="modalLogin">
+										Đăng nhập ngay
+									</a>
+								</p>
+								<div class="form-button d-flex align-items-end justify-content-between">
+									<button type="submit" class="btn btn-primary btn-customize">
+										<span>
+											Đăng Ký
+											<i class="fas fa-sign-out-alt"></i>
+										</span>
+									</button>
+									<a href="javascript:void(0)" class="text-muted" data-dismiss="modal">Đóng</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalContact" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content border-0">
+				<div class="login-main">
+					<div class="login-wrapper">
+						<div class="login-inner">
+							<div class="login-header">
+								<img src="./assets/images/logo.png">
+								<h1>Báo Giá Theo Yêu Cầu Website</h1>
+							</div>
+							<form class="form-effect" action="">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="group-effect">
+											<input type="text" id="titleContact" class="input-effect">
+											<label class="label-effect" for="titleContact">
+												<i class="fas fa-envelope"></i>
+												<span>Fullname</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="group-effect">
+											<input type="text" id="fullnameContact" class="input-effect">
+											<label class="label-effect" for="fullnameContact">
+												<i class="fas fa-address-card"></i>
+												<span>Fullname</span>
+											</label>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="group-effect">
+											<input type="text" id="phoneContact" class="input-effect">
+											<label class="label-effect" for="phoneContact">
+												<i class="fas fa-phone-alt"></i>
+												<span>Số điện thoại</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="group-effect">
+											<input type="email" id="emailContact" class="input-effect">
+											<label class="label-effect" for="emailContact">
+												<i class="fas fa-envelope"></i>
+												<span>Email</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="group-effect group-textarea">
+											<textarea name="your-message" id="messageContact" class="input-effect"
+											          autocomplete="off"></textarea>
+											<label class="label-effect" for="messageContact">
+												<i class="fas fa-comment-dots"></i>
+												<span>Nội dung</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-button d-flex align-items-end justify-content-between">
+									<button type="submit" class="btn btn-primary btn-customize">
+										<span>
+											Gửi liên hệ
+											<i class="fas fa-share-square"></i>
+										</span>
+									</button>
+									<a href="javascript:void(0)" class="text-muted" data-dismiss="modal">Đóng</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<header id="header">
+	<div class="header-top border-bottom bg-light">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-sm-6 col-8">
+					<div class="d-flex align-items-center justify-content-start">
+						<div class="language d-flex align-items-center justify-content-center py-2">
+							<a href="javascript:void(0)">
+								<span>
+									<img src="./assets/images/language/vi.png" alt="">
+									Vietnamese
+								</span>
+								<i class="fas fa-angle-down"></i>
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/vi.png" alt="">
+											Vietnamese
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/en.png" alt="">
+											English
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/japan.png" alt="">
+											Japanese
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/vi.png" alt="">
+											Vietnamese
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/en.png" alt="">
+											English
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/japan.png" alt="">
+											Japanese
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/vi.png" alt="">
+											Vietnamese
+										</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="currency py-2 position-relative py-3 pl-3 ml-3">
+							<a href="javascript:void(0)">
+								VND <i class="fas fa-angle-down"></i>
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a class="d-block" href="javascript:void(0)">VND</a>
+								</li>
+								<li>
+									<a class="d-block" href="javascript:void(0)">USD</a>
+								</li>
+								<li>
+									<a class="d-block" href="javascript:void(0)">EUR</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-4">
+					<div class="text-md-right text-center py-2 d-flex align-items-center justify-content-end">
+						<a href="#modalLogin" data-toggle="modal"
+						   class="btn btn-outline-primary btn-customize mr-2 d-none d-md-flex"><span>Đăng nhập</span></a>
+						<a href="#modalRegister" data-toggle="modal"
+						   class="btn btn-primary btn-customize d-none d-md-flex"><span>Bắt đầu</span></a>
+						<a href="#modalLogin" data-toggle="modal"
+						   class="btn btn-primary btn-customize d-flex d-md-none"><span>Tài khoản</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-bottom bg-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="logo">
+						<a href="#" class="d-inline-block">
+							<img src="./assets/images/logo.png" alt="Logo - Nencer.vn">
+						</a>
+						<div class="hamburger" id="hamburger">
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="navigation">
+						<ul class="list-unstyled mb-0 d-lg-flex align-items-center justify-content-end" id="hasMenu">
+							<li>
+								<a href="index.html">
+									Trang chủ
+								</a>
+							</li>
+							<li>
+								<a href="app.html">
+									Phần mềm
+								</a>
+							</li>
+							<li>
+								<a href="module.html">
+									Mô-đun
+								</a>
+							</li>
+							<li>
+								<a href="solution.html">
+									Giải pháp
+								</a>
+							</li>
+							<li>
+								<a href="outsourcing.html">
+									Outsourcing
+								</a>
+							</li>
+							<li>
+								<a href="service.html">
+									Dịch vụ
+									<i class="fas fa-angle-down"></i>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="single-service.html">
+											Tên miền
+										</a>
+									</li>
+									<li>
+										<a href="single-service.html">
+											Hosting
+										</a>
+									</li>
+									<li>
+										<a href="single-service.html">
+											Cloud Vps
+										</a>
+									</li>
+									<li>
+										<a href="single-service.html">
+											Chứng thư SSL
+										</a>
+									</li>
+									<li>
+										<a href="single-service.html">
+											Dịch vụ Email
+										</a>
+									</li>
+									<li>
+										<a href="single-service.html">
+											Dedicated Server
+										</a>
+									</li>
+									<li>
+										<a href="single-service.html">
+											Gói hỗ trợ
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="contact.html">
+									Liên hệ
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-overlay"></div>
+	</div>
+</header>
+<div class="main">
+	<section class="banner-page" style="background-image: url('./assets/images/banner-page.jpg')">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="heading-page text-left position-relative py-5">
+						<h2 class="heading-title text-white font-weight-bolder text-uppercase h3">CLOUD VPS PREMIUM
+						</h2>
+						<p class="heading-desc h6 text-light my-3 text-uppercase">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consectetur,
+							dignissimos fuga in nemo nesciunt quod unde! Ab accusantium deserunt dolor eos expedita id
+							illo ipsa non quaerat, ullam! Blanditiis.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="block-breadcrumb bg-white border-bottom">
+		<div class="container">
+			<div class="row">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">
+						<a href="index.html">Trang chủ</a>
+					</li>
+					<li class="breadcrumb-item active">
+						<a href="#">CLOUD VPS PREMIUM</a>
+					</li>
+				</ol>
+			</div>
+		</div>
+	</section>
+	<section class="block-single bg-white py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="single-main">
+						<div class="single-title">
+							<h2 class="font-weight-bolder h4">CLOUD VPS PREMIUM</h2>
+						</div>
+						<div class="single-meta">
+							<span>Đăng bởi: <b>admin</b></span>
+							<span>Ngày đăng: <b>27-02-2021</b></span>
+							<span>Lượt xem: <b>4105</b></span>
+						</div>
+						<div class="single-content">
+							<p>Kính gửi: Quý khách hàng!</p>
+							<p>Công ty NENCER trân trọng cảm ơn quý khách hàng đã tin tưởng sử dụng sản phẩm/dịch vụ
+								của chúng tôi. Như các bạn đã biết, hệ thống website hoạt động như 1 cỗ máy đa chức
+								năng, nó cần chăm sóc thường xuyên để hoạt động ổn đinh và an toàn. Với mong muốn
+								hợp tác lâu dài, đôi bên cùng phát triển, công ty NENCER cung cấp giải pháp hỗ trợ
+								kỹ thuật sau bán hàng theo hai hình thức.</p>
+							<h6 class="text-dark font-weight-bolder mt-3">1. Theo lần hỗ trợ:</h6>
+							<ul>
+								<li>
+									Với gói này quý khách không cần duy trì phí hỗ trợ hàng tháng, chi phí hỗ trợ
+									trong giờ hành chính là 300.000đ/giờ làm việc. Tối thiểu 1 giờ. Thời gian sẽ
+									được tính dựa trên khối lượng công việc mà bạn yêu cầu.
+								</li>
+								<li>
+									Hỗ trợ ngoài giờ hành chính hoặc ngày lễ là 500.000đ/giờ làm việc.
+								</li>
+							</ul>
+							<h6 class="text-dark font-weight-bolder mt-3">2. Theo tháng:</h6>
+						</div>
+						<div class="card-hosting">
+							<div class="row">
+								<div class="col-sm-6 col-lg-4 my-3">
+									<div class="hosting-item">
+										<div class="hosting-item_content">
+											<div class="hosting-item_header">
+												<div class="hosting-title">
+													SHOST-LINUX 300
+												</div>
+												<div class="hosting-desc">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+													ea fugit, officiis optio pariatur placeat quidem recusandae
+													voluptatum?
+												</div>
+												<div class="hosting-tab">
+													<ul class="nav nav-tabs">
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link active"
+															   href="#tab-1thang">1
+																Tháng</a>
+														</li>
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link" href="#tab-3thang">3
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab-6thang">6
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab-12thang">12
+																Tháng</a>
+														</li>
+													</ul>
+													<div class="tab-content">
+														<div class="tab-pane fade active show"
+														     id="tab-1thang">
+															<div class="hosting-tab_price">
+																125,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																1 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab-3thang">
+															<div class="hosting-tab_price">
+																375,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																3 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab-6thang">
+															<div class="hosting-tab_price">
+																750,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																6 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab-12thang">
+															<div class="hosting-tab_price">
+																1,500,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																12 Tháng
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hosting-item_body">
+												<ul class="list-unstyled mb-0">
+													<li>
+														Dung lượng: <strong>300MB</strong>
+													</li>
+													<li>
+														Băng thông: <strong>30GB</strong>
+													</li>
+													<li>
+														MySQL: <strong>1</strong>
+													</li>
+													<li>
+														Tên miền phụ: <strong>0</strong>
+													</li>
+													<li>
+														Điều khiển: <strong>Cpanel</strong>
+													</li>
+													<li>
+														Sao lưu: <strong>Hàng tuần</strong>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4 my-3">
+									<div class="hosting-item">
+										<div class="hosting-item_content">
+											<div class="hosting-item_header">
+												<div class="hosting-title">
+													SHOST-LINUX 300
+												</div>
+												<div class="hosting-desc">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+													ea fugit, officiis optio pariatur placeat quidem recusandae
+													voluptatum?
+												</div>
+												<div class="hosting-tab">
+													<ul class="nav nav-tabs">
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link active"
+															   href="#tab1-1thang">1
+																Tháng</a>
+														</li>
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link" href="#tab1-3thang">3
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab1-6thang">6
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab1-12thang">12
+																Tháng</a>
+														</li>
+													</ul>
+													<div class="tab-content">
+														<div class="tab-pane fade active show"
+														     id="tab1-1thang">
+															<div class="hosting-tab_price">
+																125,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																1 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab1-3thang">
+															<div class="hosting-tab_price">
+																375,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																3 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab1-6thang">
+															<div class="hosting-tab_price">
+																750,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																6 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab1-12thang">
+															<div class="hosting-tab_price">
+																1,500,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																12 Tháng
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hosting-item_body">
+												<ul class="list-unstyled mb-0">
+													<li>
+														Dung lượng: <strong>300MB</strong>
+													</li>
+													<li>
+														Băng thông: <strong>30GB</strong>
+													</li>
+													<li>
+														MySQL: <strong>1</strong>
+													</li>
+													<li>
+														Tên miền phụ: <strong>0</strong>
+													</li>
+													<li>
+														Điều khiển: <strong>Cpanel</strong>
+													</li>
+													<li>
+														Sao lưu: <strong>Hàng tuần</strong>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4 my-3">
+									<div class="hosting-item">
+										<div class="hosting-item_content">
+											<div class="hosting-item_header">
+												<div class="hosting-title">
+													SHOST-LINUX 300
+												</div>
+												<div class="hosting-desc">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+													ea fugit, officiis optio pariatur placeat quidem recusandae
+													voluptatum?
+												</div>
+												<div class="hosting-tab">
+													<ul class="nav nav-tabs">
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link active"
+															   href="#tab-1thang">1
+																Tháng</a>
+														</li>
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link" href="#tab-3thang">3
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab-6thang">6
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab-12thang">12
+																Tháng</a>
+														</li>
+													</ul>
+													<div class="tab-content">
+														<div class="tab-pane fade active show"
+														     id="tab-1thang">
+															<div class="hosting-tab_price">
+																125,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																1 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab-3thang">
+															<div class="hosting-tab_price">
+																375,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																3 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab-6thang">
+															<div class="hosting-tab_price">
+																750,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																6 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab-12thang">
+															<div class="hosting-tab_price">
+																1,500,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																12 Tháng
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hosting-item_body">
+												<ul class="list-unstyled mb-0">
+													<li>
+														Dung lượng: <strong>300MB</strong>
+													</li>
+													<li>
+														Băng thông: <strong>30GB</strong>
+													</li>
+													<li>
+														MySQL: <strong>1</strong>
+													</li>
+													<li>
+														Tên miền phụ: <strong>0</strong>
+													</li>
+													<li>
+														Điều khiển: <strong>Cpanel</strong>
+													</li>
+													<li>
+														Sao lưu: <strong>Hàng tuần</strong>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4 my-3">
+									<div class="hosting-item">
+										<div class="hosting-item_content">
+											<div class="hosting-item_header">
+												<div class="hosting-title">
+													SHOST-LINUX 300
+												</div>
+												<div class="hosting-desc">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+													ea fugit, officiis optio pariatur placeat quidem recusandae
+													voluptatum?
+												</div>
+												<div class="hosting-tab">
+													<ul class="nav nav-tabs">
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link active"
+															   href="#tab1-1thang">1
+																Tháng</a>
+														</li>
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link" href="#tab1-3thang">3
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab1-6thang">6
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab1-12thang">12
+																Tháng</a>
+														</li>
+													</ul>
+													<div class="tab-content">
+														<div class="tab-pane fade active show"
+														     id="tab1-1thang">
+															<div class="hosting-tab_price">
+																125,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																1 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab1-3thang">
+															<div class="hosting-tab_price">
+																375,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																3 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab1-6thang">
+															<div class="hosting-tab_price">
+																750,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																6 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab1-12thang">
+															<div class="hosting-tab_price">
+																1,500,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																12 Tháng
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hosting-item_body">
+												<ul class="list-unstyled mb-0">
+													<li>
+														Dung lượng: <strong>300MB</strong>
+													</li>
+													<li>
+														Băng thông: <strong>30GB</strong>
+													</li>
+													<li>
+														MySQL: <strong>1</strong>
+													</li>
+													<li>
+														Tên miền phụ: <strong>0</strong>
+													</li>
+													<li>
+														Điều khiển: <strong>Cpanel</strong>
+													</li>
+													<li>
+														Sao lưu: <strong>Hàng tuần</strong>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4 my-3">
+									<div class="hosting-item">
+										<div class="hosting-item_content">
+											<div class="hosting-item_header">
+												<div class="hosting-title">
+													SHOST-LINUX 300
+												</div>
+												<div class="hosting-desc">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+													ea fugit, officiis optio pariatur placeat quidem recusandae
+													voluptatum?
+												</div>
+												<div class="hosting-tab">
+													<ul class="nav nav-tabs">
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link active"
+															   href="#tab-1thang">1
+																Tháng</a>
+														</li>
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link" href="#tab-3thang">3
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab-6thang">6
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab-12thang">12
+																Tháng</a>
+														</li>
+													</ul>
+													<div class="tab-content">
+														<div class="tab-pane fade active show"
+														     id="tab-1thang">
+															<div class="hosting-tab_price">
+																125,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																1 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab-3thang">
+															<div class="hosting-tab_price">
+																375,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																3 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab-6thang">
+															<div class="hosting-tab_price">
+																750,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																6 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab-12thang">
+															<div class="hosting-tab_price">
+																1,500,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																12 Tháng
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hosting-item_body">
+												<ul class="list-unstyled mb-0">
+													<li>
+														Dung lượng: <strong>300MB</strong>
+													</li>
+													<li>
+														Băng thông: <strong>30GB</strong>
+													</li>
+													<li>
+														MySQL: <strong>1</strong>
+													</li>
+													<li>
+														Tên miền phụ: <strong>0</strong>
+													</li>
+													<li>
+														Điều khiển: <strong>Cpanel</strong>
+													</li>
+													<li>
+														Sao lưu: <strong>Hàng tuần</strong>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4 my-3">
+									<div class="hosting-item">
+										<div class="hosting-item_content">
+											<div class="hosting-item_header">
+												<div class="hosting-title">
+													SHOST-LINUX 300
+												</div>
+												<div class="hosting-desc">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+													ea fugit, officiis optio pariatur placeat quidem recusandae
+													voluptatum?
+												</div>
+												<div class="hosting-tab">
+													<ul class="nav nav-tabs">
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link active"
+															   href="#tab1-1thang">1
+																Tháng</a>
+														</li>
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link" href="#tab1-3thang">3
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab1-6thang">6
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab1-12thang">12
+																Tháng</a>
+														</li>
+													</ul>
+													<div class="tab-content">
+														<div class="tab-pane fade active show"
+														     id="tab1-1thang">
+															<div class="hosting-tab_price">
+																125,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																1 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab1-3thang">
+															<div class="hosting-tab_price">
+																375,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																3 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab1-6thang">
+															<div class="hosting-tab_price">
+																750,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																6 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab1-12thang">
+															<div class="hosting-tab_price">
+																1,500,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																12 Tháng
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hosting-item_body">
+												<ul class="list-unstyled mb-0">
+													<li>
+														Dung lượng: <strong>300MB</strong>
+													</li>
+													<li>
+														Băng thông: <strong>30GB</strong>
+													</li>
+													<li>
+														MySQL: <strong>1</strong>
+													</li>
+													<li>
+														Tên miền phụ: <strong>0</strong>
+													</li>
+													<li>
+														Điều khiển: <strong>Cpanel</strong>
+													</li>
+													<li>
+														Sao lưu: <strong>Hàng tuần</strong>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4 my-3">
+									<div class="hosting-item">
+										<div class="hosting-item_content">
+											<div class="hosting-item_header">
+												<div class="hosting-title">
+													SHOST-LINUX 300
+												</div>
+												<div class="hosting-desc">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+													ea fugit, officiis optio pariatur placeat quidem recusandae
+													voluptatum?
+												</div>
+												<div class="hosting-tab">
+													<ul class="nav nav-tabs">
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link active"
+															   href="#tab-1thang">1
+																Tháng</a>
+														</li>
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link" href="#tab-3thang">3
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab-6thang">6
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab-12thang">12
+																Tháng</a>
+														</li>
+													</ul>
+													<div class="tab-content">
+														<div class="tab-pane fade active show"
+														     id="tab-1thang">
+															<div class="hosting-tab_price">
+																125,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																1 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab-3thang">
+															<div class="hosting-tab_price">
+																375,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																3 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab-6thang">
+															<div class="hosting-tab_price">
+																750,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																6 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab-12thang">
+															<div class="hosting-tab_price">
+																1,500,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																12 Tháng
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hosting-item_body">
+												<ul class="list-unstyled mb-0">
+													<li>
+														Dung lượng: <strong>300MB</strong>
+													</li>
+													<li>
+														Băng thông: <strong>30GB</strong>
+													</li>
+													<li>
+														MySQL: <strong>1</strong>
+													</li>
+													<li>
+														Tên miền phụ: <strong>0</strong>
+													</li>
+													<li>
+														Điều khiển: <strong>Cpanel</strong>
+													</li>
+													<li>
+														Sao lưu: <strong>Hàng tuần</strong>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4 my-3">
+									<div class="hosting-item">
+										<div class="hosting-item_content">
+											<div class="hosting-item_header">
+												<div class="hosting-title">
+													SHOST-LINUX 300
+												</div>
+												<div class="hosting-desc">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+													ea fugit, officiis optio pariatur placeat quidem recusandae
+													voluptatum?
+												</div>
+												<div class="hosting-tab">
+													<ul class="nav nav-tabs">
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link active"
+															   href="#tab1-1thang">1
+																Tháng</a>
+														</li>
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link" href="#tab1-3thang">3
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab1-6thang">6
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab1-12thang">12
+																Tháng</a>
+														</li>
+													</ul>
+													<div class="tab-content">
+														<div class="tab-pane fade active show"
+														     id="tab1-1thang">
+															<div class="hosting-tab_price">
+																125,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																1 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab1-3thang">
+															<div class="hosting-tab_price">
+																375,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																3 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab1-6thang">
+															<div class="hosting-tab_price">
+																750,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																6 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab1-12thang">
+															<div class="hosting-tab_price">
+																1,500,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																12 Tháng
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hosting-item_body">
+												<ul class="list-unstyled mb-0">
+													<li>
+														Dung lượng: <strong>300MB</strong>
+													</li>
+													<li>
+														Băng thông: <strong>30GB</strong>
+													</li>
+													<li>
+														MySQL: <strong>1</strong>
+													</li>
+													<li>
+														Tên miền phụ: <strong>0</strong>
+													</li>
+													<li>
+														Điều khiển: <strong>Cpanel</strong>
+													</li>
+													<li>
+														Sao lưu: <strong>Hàng tuần</strong>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4 my-3">
+									<div class="hosting-item">
+										<div class="hosting-item_content">
+											<div class="hosting-item_header">
+												<div class="hosting-title">
+													SHOST-LINUX 300
+												</div>
+												<div class="hosting-desc">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+													ea fugit, officiis optio pariatur placeat quidem recusandae
+													voluptatum?
+												</div>
+												<div class="hosting-tab">
+													<ul class="nav nav-tabs">
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link active"
+															   href="#tab1-1thang">1
+																Tháng</a>
+														</li>
+														<li class="nav-item">
+															<a data-toggle="tab" class="nav-link" href="#tab1-3thang">3
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab1-6thang">6
+																Tháng</a>
+														</li>
+														<li>
+															<a data-toggle="tab" class="nav-link" href="#tab1-12thang">12
+																Tháng</a>
+														</li>
+													</ul>
+													<div class="tab-content">
+														<div class="tab-pane fade active show"
+														     id="tab1-1thang">
+															<div class="hosting-tab_price">
+																125,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																1 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab1-3thang">
+															<div class="hosting-tab_price">
+																375,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																3 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab1-6thang">
+															<div class="hosting-tab_price">
+																750,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																6 Tháng
+															</div>
+														</div>
+														<div class="tab-pane fade" id="tab1-12thang">
+															<div class="hosting-tab_price">
+																1,500,000 <sup>₫</sup>
+															</div>
+															<div class="hosting-tab_time">
+																12 Tháng
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hosting-item_body">
+												<ul class="list-unstyled mb-0">
+													<li>
+														Dung lượng: <strong>300MB</strong>
+													</li>
+													<li>
+														Băng thông: <strong>30GB</strong>
+													</li>
+													<li>
+														MySQL: <strong>1</strong>
+													</li>
+													<li>
+														Tên miền phụ: <strong>0</strong>
+													</li>
+													<li>
+														Điều khiển: <strong>Cpanel</strong>
+													</li>
+													<li>
+														Sao lưu: <strong>Hàng tuần</strong>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+
+<footer id="footer" class="bg-light">
+	<div class="footer-top py-4 border-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="footer-inner">
+						<div class="footer-logo mt-2 mb-3">
+							<a href="index.html">
+								<img src="./assets/images/logo.png" alt="">
+							</a>
+						</div>
+						<h3 class="text-uppercase">THIẾT KẾ WEBSITE THÔNG MINH, ỨNG DỤNG DI ĐỘNG - NENCER</h3>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="footer-inner">
+						<a class="toggled-footer" data-toggle="collapse" href="#footer01">
+							<h3 class="text-uppercase">
+								Chính sách
+							</h3>
+						</a>
+						<div class="footer-list collapse" id="footer01">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">
+										Về chúng tôi
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Quy định sử dụng
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Quyền riêng tư
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Thanh toán
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="footer-inner">
+						<a class="toggled-footer" data-toggle="collapse" href="#footer02">
+							<h3 class="text-uppercase">
+								Thông tin
+							</h3>
+						</a>
+						<div class="footer-list collapse" id="footer02">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">
+										Quà tặng
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Hướng dẫn sử dụng
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Video hướng dẫn
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Vé hỗ trợ
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="footer-inner">
+						<h3 class="text-uppercase">Kết nối mxh</h3>
+						<div class="footer-social">
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start">
+								<li>
+									<a href="" class="facebook">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="twitter">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="google">
+										<i class="fab fa-google"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="youtube">
+										<i class="fab fa-youtube"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom py-4 border-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="footer-inner">
+						<h3 class="text-uppercase">Trụ sở chính</h3>
+						<div class="footer-info">
+							<ul class="mb-0">
+								<li>
+									Số 35/45 Trần Thái Tông, Cầu Giấy, Hà Nội
+								</li>
+								<li>
+									Hỗ trợ: <b>(+84) 024 62 757 222</b> (Thứ 2 đến Thứ 7). Hotline: <b>0943793984</b>
+								</li>
+								<li>
+									Email: <b>*support@nencer.com*(+84)</b>
+								</li>
+								<li>
+									Bản quyền 2010-2020 Nencer JSC.,. Giữ toàn quyền.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 mt-3 mt-md-0">
+					<div class="footer-inner">
+						<h3 class="text-uppercase">Văn phòng Hồ chí minh</h3>
+						<div class="footer-info">
+							<ul class="mb-0">
+								<li>
+									163/2A Trường Chinh, Phường Tân Hưng Thuận, Quận 12, TP HCM
+								</li>
+								<li>
+									Hỗ trợ: <b>0983973899</b>(Thứ 2 đến Thứ 6 từ 8h đến 18h; Thứ 7 từ 8h00 đến 17h00)
+								</li>
+								<li>
+									Email: <b>*sales@nencer.com*(+84)</b>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<div class="float-button">
+	<div class="float-inner">
+		<a href="#modalContact" data-toggle="modal">
+			<div class="float-icon">
+				<i class="fas fa-envelope"></i>
+			</div>
+			<div class="float-text">
+				Liên hệ
+			</div>
+		</a>
+	</div>
+</div>
+
+<a href="javascript:void(0)" id="return-to-top">
+	<i class="fas fa-angle-up"></i>
+</a>
+
+<script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/swiper/swiper.js"></script>
+<script type="text/javascript" src="./assets/js/theme-script.js"></script>
+
+<style>
+	.hosting-item {
+		position: relative;
+		text-align: center;
+		-webkit-transition: all 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+		border-radius: 4px;
+		overflow: hidden;
+		background-color: #fcfcfd;
+		border: 1px solid rgba(224, 224, 232, 0);
+		-webkit-box-shadow: -1px 8px 18px rgb(0 0 0 / 8%);
+		box-shadow: -1px 8px 18px rgb(0 0 0 / 8%);
+	}
+	
+	.hosting-item .hosting-item_content .hosting-item_header {
+		position: relative;
+		z-index: 10;
+		padding: 35px 15px 45px;
+		overflow: hidden;
+	}
+	
+	.hosting-item .hosting-item_content .hosting-item_header:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		background-repeat: repeat-x;
+		background-image: -webkit-linear-gradient(
+				90deg, var(--color-main), var(--color-hover));
+		background-image: -o-linear-gradient(90deg, var(--color-main), var(--color-hover));
+		background-image: linear-gradient(
+				90deg, var(--color-main), var(--color-hover));
+		background-repeat: repeat-x;
+		-webkit-transform-origin: left bottom;
+		-moz-transform-origin: left bottom;
+		-ms-transform-origin: left bottom;
+		transform-origin: left bottom;
+		-webkit-transform: skewY(
+				-7deg
+		);
+		-moz-transform: skewY(-7deg);
+		-ms-transform: skewY(-7deg);
+		transform: skewY(
+				-7deg
+		);
+	}
+	
+	.hosting-item .hosting-item_content .hosting-item_header .hosting-title {
+		margin-bottom: 15px;
+		background-color: rgba(255, 255, 255, 0.15);
+		color: #ffffff;
+		text-shadow: 0 2px 3px rgb(0 0 0 / 25%);
+		border-radius: 4px;
+		padding: 10px 25px;
+		font-weight: 600;
+		text-transform: uppercase;
+		font-size: 1.4em;
+		display: inline-block;
+	}
+	
+	.hosting-item .hosting-item_content .hosting-item_header .hosting-desc {
+		font-size: 1.1em;
+		margin: 10px 0 30px;
+		color: #ffffff;
+	}
+	
+	.hosting-item .hosting-item_content .hosting-item_header .nav-tabs {
+		border-bottom: 0 !important;
+		text-align: center;
+		justify-content: center;
+	}
+	
+	.hosting-item .hosting-item_content .hosting-item_header .nav-tabs li {
+		margin: 6px !important;
+	}
+	
+	.hosting-item .hosting-item_content .hosting-item_header .nav-tabs li a {
+		padding: 3px 6px 4px;
+		font-size: 1em;
+		color: rgba(255, 255, 255, 0.62);
+		background-color: rgba(0, 0, 0, 0.1) !important;
+		border-radius: 6px;
+		border: 0;
+		-webkit-transition: all 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+	}
+	
+	.hosting-item .hosting-item_content .hosting-item_header .nav-tabs li a.active {
+		color: #ffffff;
+		background-color: rgba(255, 255, 255, 0.16) !important;
+	}
+	
+	.hosting-item .hosting-item_content .hosting-item_header .hosting-tab_price {
+		color: #ffffff;
+		font-size: 2em !important;
+		margin-bottom: 3px;
+		margin-top: 15px;
+	}
+	
+	.hosting-item .hosting-item_content .hosting-item_header .hosting-tab_time {
+		font-size: 1em;
+		color: #fff;
+	}
+	
+	.hosting-item .hosting-item_content .hosting-item_body {
+		padding: 0 20px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	
+	.hosting-item .hosting-item_content .hosting-item_body ul {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.hosting-item .hosting-item_content .hosting-item_body ul li {
+		font-size: 1.05em;
+		background: #fff;
+		color: #63626e;
+		-webkit-transition: all 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+		-webkit-box-shadow: 0 3px 13px rgb(0 0 0 / 8%);
+		box-shadow: 0 3px 13px rgb(0 0 0 / 8%);
+		border-radius: 4px;
+		padding: 6px 12px;
+		margin-top: 6px !important;
+		margin-bottom: 6px !important;
+		position: relative;
+		display: inline-block;
+		width: auto;
+	}
+	
+	.hosting-item .hosting-item_content .hosting-item_body ul li b,
+	.hosting-item .hosting-item_content .hosting-item_body ul li strong {
+		font-weight: 700;
+		color: #000;
+	}
+</style>
+
+</body>
+</html>
