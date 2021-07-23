@@ -49,7 +49,14 @@ $(document).ready(function () {
 		autoplay: {
 			delay: 1000000,
 			disableOnInteraction: false,
-		}
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+			renderBullet: function (index, className) {
+				return `<span class="${className}">${(index + 1) < 10 ? '0' + (index + 1) : (index + 1)}</span>`;
+			},
+		},
 	});
 	
 	const myWebsite = new Swiper('#swiper-website', {
@@ -80,6 +87,18 @@ $(document).ready(function () {
 	$(document).on('click', '#return-to-top', function () {
 		$("html, body").animate({scrollTop: 0}, 600);
 		return false;
+	});
+	
+	$('#viewPass').click(function () {
+		if ($(this).closest('.form-group').hasClass('show-pass')) {
+			$(this).closest('.form-group').removeClass('show-pass');
+			$(this).parent().next('input').attr('type', 'password');
+			$(this).html('<i class="fas fa-eye"></i>');
+		} else {
+			$(this).closest('.form-group').addClass('show-pass');
+			$(this).parent().next('input').attr('type', 'text');
+			$(this).html('<i class="fas fa-eye-slash"></i>');
+		}
 	});
 });
 
