@@ -2771,10 +2771,14 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
 }
 
 .banner-login {
-    height: 300px;
+    height: 250px;
     background: center center/cover no-repeat;
     position: relative;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .banner-login:before {
@@ -2788,43 +2792,17 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     background: rgba(0, 0, 0, .5);
 }
 
-.banner-login .banner-login_block {
-    bottom: -70px;
-    height: 269px;
-    padding: 52px 0 0 75px;
-    position: absolute;
-}
-
-.banner-login .banner-login_block:before {
-    content: '';
-    width: 250px;
-    height: 269px;
-    background-color: var(--color-hover);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.banner-login .banner-login_block .login-block_name {
-    font-size: 1.4em;
-    color: #c6c6c6;
-    font-weight: 700;
-    position: relative;
-    z-index: 2;
-}
-
 .banner-login .banner-login_block .login-block_title {
     font-size: 3.4em;
     color: #fff;
     font-weight: 700;
     position: relative;
     z-index: 2;
-    padding: 15px 0;
+    margin-bottom: 10px;
 }
 
 .banner-login .banner-login_block .login-block_line {
     position: relative;
-    margin-top: 13px;
     margin-left: 2px;
     height: 2px;
 }
@@ -2850,8 +2828,8 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
 
 .login-wrapper {
     position: relative;
-    padding-top: 148px;
-    padding-bottom: 129px;
+    padding-top: 80px;
+    padding-bottom: 60px;
 }
 
 .login-wrapper .login-title {
@@ -3028,4 +3006,35 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
 
 .login-wrapper .btn-link:hover {
     color: var(--color-hover);
+}
+
+@media screen and (max-width: 767px) {
+    .block-banner .swiper-container [class*=swiper-button] {
+        display: none;
+    }
+
+    .block-banner .swiper-pagination {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .block-banner .swiper-slide .slide-title {
+        font-size: 1.7em;
+    }
+
+    .banner-login .banner-login_block .login-block_title {
+        font-size: 2.4em;
+    }
+
+    .login-wrapper .login-form {
+        padding: 30px;
+    }
+
+    .login-wrapper .login-form .form-group label {
+        font-size: 1.05em;
+    }
+
+    .login-wrapper .login-form .form-group .form-control {
+        height: 46px;
+    }
 }
