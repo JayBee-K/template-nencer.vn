@@ -75,9 +75,43 @@ const themeNavigation = function (e) {
 	})
 }
 
+const initSelect2_only = function () {
+	$('[theme-action=select2-only]').each(function () {
+		$(this).select2({
+			dropdownParent: $(this).parent()
+		});
+	});
+}
+
+const viewPass = function () {
+	$('[theme-action=view-pass] > a').click(function () {
+		if ($(this).parent().hasClass('show-pass')) {
+			$(this).parent().removeClass('show-pass');
+			$(this).parent().find('input').attr('type', 'password');
+			$(this).html('<i class="fas fa-eye"></i>');
+		} else {
+			$(this).parent().addClass('show-pass');
+			$(this).parent().find('input').attr('type', 'text');
+			$(this).html('<i class="fas fa-eye-slash"></i>');
+		}
+	});
+}
+
+const showEdit = function () {
+	$('[theme-action=edit] a').click(function () {
+		$(this).closest('[theme-action=edit]').toggleClass('show');
+		$(this).tooltip('hide');
+	});
+}
+
 $(function () {
 	themeDropdown();
 	closeMessege();
 	changeLocation();
 	themeNavigation();
+	initSelect2_only();
+	viewPass();
+	showEdit();
+	
+	$('[data-toggle="tooltip"]').tooltip();
 });

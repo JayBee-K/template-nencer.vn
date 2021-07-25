@@ -28,11 +28,13 @@
 	<title>Dashboard - Nencer.vn</title>
 	
 	<link rel="stylesheet" href="./assets/plugin/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugin/select2/select2.min.css">
 	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	
 	<script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
 	<script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="./assets/plugin/select2/select2.min.js"></script>
 	<script type="text/javascript" src="./assets/js/theme-script.js"></script>
 </head>
 <body>
@@ -252,430 +254,440 @@
 					</li>
 				</ul>
 			</div>
-			<div class="message-panel panel-info">
-				<!--
-					có 5 class màu:
-					- panel-info,
-					- panel-warning,
-					- panel-danger,
-					- panel-success,
-					- panel-secondary
-				-->
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, culpa?
-				<a href="javascript:void(0)" theme-action="dismiss-messege" class="float-lg-left text-decoration-underline">
-					Dismiss
-				</a>
-			</div>
-			<div class="search-sort">
-				<div class="d-flex align-content-center justify-content-between">
-					<div class="search">
-						<form action="" class="mb-0">
-							<div class="form-group mb-0">
-								<input type="text" placeholder="Search..." class="form-control">
-								<button><i class="far fa-search"></i></button>
-							</div>
-						</form>
-					</div>
-					<div class="sort theme-action" theme-parent="location" theme-position="right"
-					     theme-action="dropdown">
-						<a href="javascript:void(0)" theme-id="setLocation">
-							<label>Sort</label>
-							<span>Location</span>
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="domain">
+					<div class="message-panel panel-info">
+						<!--
+							có 5 class màu:
+							- panel-info,
+							- panel-warning,
+							- panel-danger,
+							- panel-success,
+							- panel-secondary
+						-->
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, culpa?
+						<a href="javascript:void(0)" theme-action="dismiss-messege"
+						   class="float-lg-right text-decoration-underline">
+							Dismiss
 						</a>
-						<ul class="list-unstyled mb-0">
-							<li>
-								<a href="javascript:void(0)" theme-action="location"
-								   data-value="London (United Kingdom)">
-									<img src="./assets/images/flag/flag_gb.webp" alt="">
-									<span>
+					</div>
+					<div class="search-sort">
+						<div class="d-flex align-content-center justify-content-between">
+							<div class="search">
+								<form action="" class="mb-0">
+									<div class="form-group mb-0">
+										<input type="text" placeholder="Search..." class="form-control">
+										<button><i class="far fa-search"></i></button>
+									</div>
+								</form>
+							</div>
+							<div class="sort theme-action" theme-parent="location" theme-position="right"
+							     theme-action="dropdown">
+								<a href="javascript:void(0)" theme-id="setLocation">
+									<label>Sort</label>
+									<span>Location</span>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:void(0)" theme-action="location"
+										   data-value="London (United Kingdom)">
+											<img src="./assets/images/flag/flag_gb.webp" alt="">
+											<span>
 										United Kingdom - <b>London</b>
 									</span>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)" theme-action="location" data-value="Seoul (South Korea)">
-									<img src="./assets/images/flag/flag_kr.webp" alt="">
-									<span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)" theme-action="location"
+										   data-value="Seoul (South Korea)">
+											<img src="./assets/images/flag/flag_kr.webp" alt="">
+											<span>
 										South Korea - <b>Seoul</b>
 									</span>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)" theme-action="location" data-value="Tokyo (Japan)">
-									<img src="./assets/images/flag/flag_jp.webp" alt="">
-									<span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)" theme-action="location" data-value="Tokyo (Japan)">
+											<img src="./assets/images/flag/flag_jp.webp" alt="">
+											<span>
 										Japan - <b>Tokyo</b>
 									</span>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)" theme-action="location"
-								   data-value="London (United Kingdom)">
-									<img src="./assets/images/flag/flag_gb.webp" alt="">
-									<span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)" theme-action="location"
+										   data-value="London (United Kingdom)">
+											<img src="./assets/images/flag/flag_gb.webp" alt="">
+											<span>
 										United Kingdom - <b>London</b>
 									</span>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)" theme-action="location" data-value="Seoul (South Korea)">
-									<img src="./assets/images/flag/flag_kr.webp" alt="">
-									<span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)" theme-action="location"
+										   data-value="Seoul (South Korea)">
+											<img src="./assets/images/flag/flag_kr.webp" alt="">
+											<span>
 										South Korea - <b>Seoul</b>
 									</span>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)" theme-action="location" data-value="Tokyo (Japan)">
-									<img src="./assets/images/flag/flag_jp.webp" alt="">
-									<span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)" theme-action="location" data-value="Tokyo (Japan)">
+											<img src="./assets/images/flag/flag_jp.webp" alt="">
+											<span>
 										Japan - <b>Tokyo</b>
 									</span>
-								</a>
-							</li>
-						</ul>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="table-theme">
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+								<tr>
+									<th class="text-center">
+										<div class="checkbox-theme">
+											<input type="checkbox" id="checkbox-all">
+											<label for="checkbox-all">
+												<span></span>
+											</label>
+										</div>
+									</th>
+									<th>
+										Tên dịch vụ
+									</th>
+									<th>
+										Loại
+									</th>
+									<th>
+										Quốc gia
+									</th>
+									<th>
+										Ngày hết hạn
+									</th>
+									<th>
+										Trạng thái
+									</th>
+									<th>
+									</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="text-center">
+										<div class="checkbox-theme">
+											<input type="checkbox" id="checkbox-1">
+											<label for="checkbox-1">
+												<span></span>
+											</label>
+										</div>
+									</td>
+									<td>
+										<div class="name">
+											dn2.nencer.com
+										</div>
+										<div class="text">1024 MB Cloud Compute - 66.42.51.72</div>
+									</td>
+									<td>
+										<div class="text">
+											Domain
+										</div>
+									</td>
+									<td>
+										<div class="d-flex align-items-center">
+											<img src="./assets/images/flag/flag_gb.webp" class="flag" alt="">
+											<div class="text">
+												United Kingdom
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="text">
+											24/12/2021
+										</div>
+									</td>
+									<td>
+										<div class="text d-flex align-items-center">
+											<i class="far fa-play-circle text-success"></i>
+											Đang hoạt động
+										</div>
+									</td>
+									<td>
+										<div class="theme-action" theme-parent="location" theme-position="right"
+										     theme-action="dropdown">
+											<a href="javascript:void(0)">
+												<span></span>
+												<span></span>
+												<span></span>
+											</a>
+											<ul class="list-unstyled">
+												<li>
+													<a href="">
+														<i class="fas fa-eye"></i>
+														Xem chi tiết
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<i class="fas fa-calendar-alt"></i>
+														Gia hạn
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<i class="fas fa-edit"></i>
+														Chỉnh sửa
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<i class="fas fa-trash"></i>
+														Xoá
+													</a>
+												</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center">
+										<div class="checkbox-theme">
+											<input type="checkbox" id="checkbox-2">
+											<label for="checkbox-2">
+												<span></span>
+											</label>
+										</div>
+									</td>
+									<td>
+										<div class="name">
+											dn2.nencer.com
+										</div>
+										<div class="text">1024 MB Cloud Compute - 66.42.51.72</div>
+									</td>
+									<td>
+										<div class="text">
+											Domain
+										</div>
+									</td>
+									<td>
+										<div class="d-flex align-items-center">
+											<img src="./assets/images/flag/flag_gb.webp" class="flag" alt="">
+											<div class="text">
+												United Kingdom
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="text">
+											24/12/2021
+										</div>
+									</td>
+									<td>
+										<div class="text d-flex align-items-center">
+											<i class="far fa-times text-danger"></i>
+											Hết hạn
+										</div>
+									</td>
+									<td>
+										<div class="theme-action" theme-parent="location" theme-position="right"
+										     theme-action="dropdown">
+											<a href="javascript:void(0)">
+												<span></span>
+												<span></span>
+												<span></span>
+											</a>
+											<ul class="list-unstyled">
+												<li>
+													<a href="">
+														<i class="fas fa-eye"></i>
+														Xem chi tiết
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<i class="fas fa-calendar-alt"></i>
+														Gia hạn
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<i class="fas fa-edit"></i>
+														Chỉnh sửa
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<i class="fas fa-trash"></i>
+														Xoá
+													</a>
+												</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center">
+										<div class="checkbox-theme">
+											<input type="checkbox" id="checkbox-3">
+											<label for="checkbox-3">
+												<span></span>
+											</label>
+										</div>
+									</td>
+									<td>
+										<div class="name">
+											dn2.nencer.com
+										</div>
+										<div class="text">1024 MB Cloud Compute - 66.42.51.72</div>
+									</td>
+									<td>
+										<div class="text">
+											Domain
+										</div>
+									</td>
+									<td>
+										<div class="d-flex align-items-center">
+											<img src="./assets/images/flag/flag_gb.webp" class="flag" alt="">
+											<div class="text">
+												United Kingdom
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="text">
+											24/12/2021
+										</div>
+									</td>
+									<td>
+										<div class="text d-flex align-items-center">
+											<i class="far fa-play-circle text-success"></i>
+											Đang hoạt động
+										</div>
+									</td>
+									<td>
+										<div class="theme-action" theme-parent="location" theme-position="right"
+										     theme-action="dropdown">
+											<a href="javascript:void(0)">
+												<span></span>
+												<span></span>
+												<span></span>
+											</a>
+											<ul class="list-unstyled">
+												<li>
+													<a href="">
+														<i class="fas fa-eye"></i>
+														Xem chi tiết
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<i class="fas fa-calendar-alt"></i>
+														Gia hạn
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<i class="fas fa-edit"></i>
+														Chỉnh sửa
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<i class="fas fa-trash"></i>
+														Xoá
+													</a>
+												</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center">
+										<div class="checkbox-theme">
+											<input type="checkbox" id="checkbox-4">
+											<label for="checkbox-4">
+												<span></span>
+											</label>
+										</div>
+									</td>
+									<td>
+										<div class="name">
+											dn2.nencer.com
+										</div>
+										<div class="text">1024 MB Cloud Compute - 66.42.51.72</div>
+									</td>
+									<td>
+										<div class="text">
+											Domain
+										</div>
+									</td>
+									<td>
+										<div class="d-flex align-items-center">
+											<img src="./assets/images/flag/flag_gb.webp" class="flag" alt="">
+											<div class="text">
+												United Kingdom
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="text">
+											24/12/2021
+										</div>
+									</td>
+									<td>
+										<div class="text d-flex align-items-center">
+											<i class="far fa-times text-danger"></i>
+											Hết hạn
+										</div>
+									</td>
+									<td>
+										<div class="theme-action" theme-parent="location" theme-position="right"
+										     theme-action="dropdown">
+											<a href="javascript:void(0)">
+												<span></span>
+												<span></span>
+												<span></span>
+											</a>
+											<ul class="list-unstyled">
+												<li>
+													<a href="">
+														<i class="fas fa-eye"></i>
+														Xem chi tiết
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<i class="fas fa-calendar-alt"></i>
+														Gia hạn
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<i class="fas fa-edit"></i>
+														Chỉnh sửa
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<i class="fas fa-trash"></i>
+														Xoá
+													</a>
+												</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="table-theme">
-				<div class="table-responsive">
-					<table class="table">
-						<thead>
-						<tr>
-							<th class="text-center">
-								<div class="checkbox-theme">
-									<input type="checkbox" id="checkbox-all">
-									<label for="checkbox-all">
-										<span></span>
-									</label>
-								</div>
-							</th>
-							<th>
-								Tên dịch vụ
-							</th>
-							<th>
-								Loại
-							</th>
-							<th>
-								Quốc gia
-							</th>
-							<th>
-								Ngày hết hạn
-							</th>
-							<th>
-								Trạng thái
-							</th>
-							<th>
-							</th>
-						</tr>
-						</thead>
-						<tbody>
-						<tr>
-							<td class="text-center">
-								<div class="checkbox-theme">
-									<input type="checkbox" id="checkbox-1">
-									<label for="checkbox-1">
-										<span></span>
-									</label>
-								</div>
-							</td>
-							<td>
-								<div class="name">
-									dn2.nencer.com
-								</div>
-								<div class="text">1024 MB Cloud Compute - 66.42.51.72</div>
-							</td>
-							<td>
-								<div class="text">
-									Domain
-								</div>
-							</td>
-							<td>
-								<div class="d-flex align-items-center">
-									<img src="./assets/images/flag/flag_gb.webp" class="flag" alt="">
-									<div class="text">
-										United Kingdom
-									</div>
-								</div>
-							</td>
-							<td>
-								<div class="text">
-									24/12/2021
-								</div>
-							</td>
-							<td>
-								<div class="text d-flex align-items-center">
-									<i class="far fa-play-circle text-success"></i>
-									Đang hoạt động
-								</div>
-							</td>
-							<td>
-								<div class="theme-action" theme-parent="location" theme-position="right"
-								     theme-action="dropdown">
-									<a href="javascript:void(0)">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-									<ul class="list-unstyled">
-										<li>
-											<a href="">
-												<i class="fas fa-eye"></i>
-												Xem chi tiết
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-calendar-alt"></i>
-												Gia hạn
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-edit"></i>
-												Chỉnh sửa
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-trash"></i>
-												Xoá
-											</a>
-										</li>
-									</ul>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="text-center">
-								<div class="checkbox-theme">
-									<input type="checkbox" id="checkbox-2">
-									<label for="checkbox-2">
-										<span></span>
-									</label>
-								</div>
-							</td>
-							<td>
-								<div class="name">
-									dn2.nencer.com
-								</div>
-								<div class="text">1024 MB Cloud Compute - 66.42.51.72</div>
-							</td>
-							<td>
-								<div class="text">
-									Domain
-								</div>
-							</td>
-							<td>
-								<div class="d-flex align-items-center">
-									<img src="./assets/images/flag/flag_gb.webp" class="flag" alt="">
-									<div class="text">
-										United Kingdom
-									</div>
-								</div>
-							</td>
-							<td>
-								<div class="text">
-									24/12/2021
-								</div>
-							</td>
-							<td>
-								<div class="text d-flex align-items-center">
-									<i class="far fa-times text-danger"></i>
-									Hết hạn
-								</div>
-							</td>
-							<td>
-								<div class="theme-action" theme-parent="location" theme-position="right"
-								     theme-action="dropdown">
-									<a href="javascript:void(0)">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-									<ul class="list-unstyled">
-										<li>
-											<a href="">
-												<i class="fas fa-eye"></i>
-												Xem chi tiết
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-calendar-alt"></i>
-												Gia hạn
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-edit"></i>
-												Chỉnh sửa
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-trash"></i>
-												Xoá
-											</a>
-										</li>
-									</ul>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="text-center">
-								<div class="checkbox-theme">
-									<input type="checkbox" id="checkbox-3">
-									<label for="checkbox-3">
-										<span></span>
-									</label>
-								</div>
-							</td>
-							<td>
-								<div class="name">
-									dn2.nencer.com
-								</div>
-								<div class="text">1024 MB Cloud Compute - 66.42.51.72</div>
-							</td>
-							<td>
-								<div class="text">
-									Domain
-								</div>
-							</td>
-							<td>
-								<div class="d-flex align-items-center">
-									<img src="./assets/images/flag/flag_gb.webp" class="flag" alt="">
-									<div class="text">
-										United Kingdom
-									</div>
-								</div>
-							</td>
-							<td>
-								<div class="text">
-									24/12/2021
-								</div>
-							</td>
-							<td>
-								<div class="text d-flex align-items-center">
-									<i class="far fa-play-circle text-success"></i>
-									Đang hoạt động
-								</div>
-							</td>
-							<td>
-								<div class="theme-action" theme-parent="location" theme-position="right"
-								     theme-action="dropdown">
-									<a href="javascript:void(0)">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-									<ul class="list-unstyled">
-										<li>
-											<a href="">
-												<i class="fas fa-eye"></i>
-												Xem chi tiết
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-calendar-alt"></i>
-												Gia hạn
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-edit"></i>
-												Chỉnh sửa
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-trash"></i>
-												Xoá
-											</a>
-										</li>
-									</ul>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="text-center">
-								<div class="checkbox-theme">
-									<input type="checkbox" id="checkbox-4">
-									<label for="checkbox-4">
-										<span></span>
-									</label>
-								</div>
-							</td>
-							<td>
-								<div class="name">
-									dn2.nencer.com
-								</div>
-								<div class="text">1024 MB Cloud Compute - 66.42.51.72</div>
-							</td>
-							<td>
-								<div class="text">
-									Domain
-								</div>
-							</td>
-							<td>
-								<div class="d-flex align-items-center">
-									<img src="./assets/images/flag/flag_gb.webp" class="flag" alt="">
-									<div class="text">
-										United Kingdom
-									</div>
-								</div>
-							</td>
-							<td>
-								<div class="text">
-									24/12/2021
-								</div>
-							</td>
-							<td>
-								<div class="text d-flex align-items-center">
-									<i class="far fa-times text-danger"></i>
-									Hết hạn
-								</div>
-							</td>
-							<td>
-								<div class="theme-action" theme-parent="location" theme-position="right"
-								     theme-action="dropdown">
-									<a href="javascript:void(0)">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-									<ul class="list-unstyled">
-										<li>
-											<a href="">
-												<i class="fas fa-eye"></i>
-												Xem chi tiết
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-calendar-alt"></i>
-												Gia hạn
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-edit"></i>
-												Chỉnh sửa
-											</a>
-										</li>
-										<li>
-											<a href="">
-												<i class="fas fa-trash"></i>
-												Xoá
-											</a>
-										</li>
-									</ul>
-								</div>
-							</td>
-						</tr>
-						</tbody>
-					</table>
+				<div class="tab-pane fade" id="hosting">
+					aaaa
 				</div>
 			</div>
 		</div>
