@@ -1,3 +1,5 @@
+let windowWidth = $(window).width();
+
 const themeDropdown = function (e) {
 	if ($('[theme-action=dropdown]').attr('theme-position')) {
 		$('[theme-action=dropdown]').addClass($('[theme-action=dropdown]').attr('theme-position'));
@@ -7,14 +9,16 @@ const themeDropdown = function (e) {
 	
 	$('[theme-action=dropdown] > a').click(function (e) {
 		e.stopPropagation();
+		$('[theme-action=dropdown]').removeClass('show');
 		let elm = $(this).parent();
 		if (elm.is('.show')) {
 			elm.removeClass('show');
-			elm.closest('.table-responsive').css('overflow', 'auto');
+			if (windowWidth > 991)
+				elm.closest('.table-responsive').css('overflow', 'auto');
 		} else {
-			$('.show[theme-action=dropdown]').removeClass('show');
-			elm.closest('.table-responsive').css('overflow', 'inherit');
 			elm.addClass('show');
+			if (windowWidth > 991)
+				elm.closest('.table-responsive').css('overflow', 'inherit');
 		}
 	});
 	

@@ -857,7 +857,7 @@ textarea:focus {
     }
 
     .quick-action > ul {
-        top: calc(-100% - 20px);
+        top: calc(-100% - 120px);
     }
 
     .quick-action > ul:after,
@@ -946,6 +946,7 @@ textarea:focus {
     .search-sort .sort {
         width: 50%;
         padding-left: 5px;
+        height: 48px;
     }
 }
 
