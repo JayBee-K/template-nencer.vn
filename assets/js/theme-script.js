@@ -105,10 +105,8 @@ $(document).ready(function () {
 $(window).scroll(function () {
 	if ($(this).scrollTop() > 200) {
 		$('.float-button').fadeIn();
-		$('#return-to-top').fadeIn();
 	} else {
 		$('.float-button').fadeOut();
-		$('#return-to-top').fadeOut();
 	}
 	
 	if ($(window).scrollTop() + $(window).height() == $(document).height()) {

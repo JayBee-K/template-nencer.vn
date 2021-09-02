@@ -1211,18 +1211,18 @@ textarea:focus {
     color: #fff;
 }
 
-.page-website .card-website .card-body {
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
+.card-website .card-body {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
 }
 
 .page-website .card-website .card-body img {
-    max-width: 70px;
+    /*max-width: 70px;*/
 }
 
 .page-website .card-website .card-body h3 {
-    font-size: 1.1em;
-    line-height: 1.7;
+    font-size: 1.2em;
+    line-height: 1.5;
 }
 
 .page-website .card-website .card-body .meta {
@@ -1254,6 +1254,8 @@ textarea:focus {
 .card-website .card-body h3 {
     color: var(--color-hover);
     transition: .2s all ease;
+    font-size: 1.3em;
+    line-height: 1.4;
 }
 
 .card-website .card-body img:hover {
@@ -2195,39 +2197,6 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     }
 }
 
-#return-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 15px;
-    background: var(--color-hover);
-    width: 45px;
-    height: 45px;
-    color: #fff;
-    text-align: center;
-    line-height: 45px;
-    font-size: 1.4rem;
-    z-index: 100;
-    text-decoration: none;
-    border-radius: 100%;
-    display: none;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-#return-to-top i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#return-to-top:hover {
-    opacity: .9;
-}
-
 /* End float button */
 
 @media screen and (max-width: 991px) {
@@ -2480,12 +2449,6 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
 
     .login-header h1 {
         font-size: 1.4em;
-    }
-
-    #return-to-top {
-        bottom: 20px;
-        width: 40px;
-        height: 40px;
     }
 
     .float-button {
@@ -3037,4 +3000,95 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     .login-wrapper .login-form .form-group .form-control {
         height: 46px;
     }
+}
+
+.card-service {
+    box-shadow: 2px 1px 12px 0 rgb(0 0 0 / 17%);
+    border-top: 7px solid var(--color-main) !important;
+    transition: .3s all ease;
+    height: 100%;
+}
+
+.card-service:hover {
+    border-top: 7px solid #dc3545 !important;
+    background-color: #fafafa !important;
+}
+
+.card-service .card-header {
+    text-align: center;
+    padding: 10px 0 !important;
+}
+
+.card-service .card-body {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-service .card-body .card-title {
+    text-align: center;
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.card-service .card-body .card-title > a {
+    color: var(--text-dark);
+    font-size: 2em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.card-service .card-body .card-title > a:active,
+.card-service .card-body .card-title > a:hover{
+    color: var(--color-main);
+}
+
+.card-service .card-body .card-title > a:after {
+    content: "";
+    background: var(--color-main);
+    width: 90px;
+    height: 1px;
+    margin: 0 auto;
+    display: block;
+}
+
+.card-service .card-body .card-text {
+    padding: 10px 0;
+    text-align: left;
+    font-size: 1.05em;
+    color: #848484;
+}
+
+.card-service .card-body .card-list ul li {
+    font-size: 1em;
+    color: #848484;
+    padding: 5px 0;
+}
+
+.card-service .card-body .card-list ul li i {
+    color: var(--color-main);
+    margin-right: 5px;
+}
+
+.card-service .card-body .card-price {
+    font-size: 1.2em;
+    color: #848484;
+    font-weight: 700;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.card-service .card-body .card-price span {
+    font-size: 1.3em;
+    color: #4b4b4b;
+}
+
+.card-service .card-body .card-button {
+    margin-top: 10px;
+}
+
+.card-service .card-body .card-button .btn-customize {
+    border-radius: 20px;
 }

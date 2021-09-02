@@ -35,111 +35,6 @@
 </head>
 <body>
 
-<div class="modal-template">
-	<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog">
-		<div class="modal-dialog">
-			<div class="modal-content border-0">
-				<div class="login-main">
-					<div class="login-wrapper">
-						<div class="login-inner">
-							<div class="login-header">
-								<img src="./assets/images/logo.png">
-								<h1>Đăng nhập</h1>
-							</div>
-							<form class="form-effect" action="">
-								<div class="group-effect">
-									<input type="email" id="emailLogin" class="input-effect">
-									<label class="label-effect" for="emailLogin">
-										<i class="fas fa-envelope"></i>
-										<span>Email</span>
-									</label>
-								</div>
-								<div class="group-effect">
-									<input type="password" tabindex="1" name="" id="passwordLogin" class="input-effect"
-									       autocomplete="off" required="">
-									<label class="label-effect" for="passwordLogin">
-										<i class="fas fa-lock"></i>
-										<span>Mật khẩu</span>
-									</label>
-								</div>
-								<p class="text-muted">Chưa có tài khoản,
-									<a href="javascript:void(0)" class="callModal" data-name="modalRegister">
-										đăng ký ngay bây giờ</a>
-								</p>
-								<div class="form-button d-flex align-items-end justify-content-between">
-									<button type="submit" class="btn btn-primary btn-customize">
-										<span>
-											Đăng nhập
-											<i class="fas fa-sign-in-alt"></i>
-										</span>
-									</button>
-									<a href="javascript:void(0)" class="text-muted" data-dismiss="modal">Đóng</a>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade" id="modalRegister" tabindex="-1" role="dialog">
-		<div class="modal-dialog">
-			<div class="modal-content border-0">
-				<div class="login-main">
-					<div class="login-wrapper">
-						<div class="login-inner">
-							<div class="login-header">
-								<img src="./assets/images/logo.png">
-								<h1>Đăng ký</h1>
-							</div>
-							<form class="form-effect" action="">
-								<div class="group-effect">
-									<input type="text" id="fullnameRegister" class="input-effect">
-									<label class="label-effect" for="fullnameRegister">
-										<i class="fas fa-envelope"></i>
-										<span>Fullname</span>
-									</label>
-								</div>
-								<div class="group-effect">
-									<input type="email" id="emailRegister" class="input-effect">
-									<label class="label-effect" for="emailRegister">
-										<i class="fas fa-envelope"></i>
-										<span>Email</span>
-									</label>
-								</div>
-								<div class="group-effect">
-									<input type="password" tabindex="1" name="" id="passwordRegister"
-									       class="input-effect"
-									       autocomplete="off" required="">
-									<label class="label-effect" for="passwordRegister">
-										<i class="fas fa-lock"></i>
-										<span>Mật khẩu</span>
-									</label>
-								</div>
-								<p class="text-muted">
-									Đã có tài khoản,
-									<a href="javascript:void(0)" class="callModal" data-name="modalLogin">
-										Đăng nhập ngay
-									</a>
-								</p>
-								<div class="form-button d-flex align-items-end justify-content-between">
-									<button type="submit" class="btn btn-primary btn-customize">
-										<span>
-											Đăng Ký
-											<i class="fas fa-sign-out-alt"></i>
-										</span>
-									</button>
-									<a href="javascript:void(0)" class="text-muted" data-dismiss="modal">Đóng</a>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
 <header id="header">
 	<div class="header-top border-bottom bg-light">
 		<div class="container">
@@ -233,11 +128,11 @@
 				</div>
 				<div class="col-sm-6 col-4">
 					<div class="text-md-right text-center py-2 d-flex align-items-center justify-content-end">
-						<a href="#modalLogin" data-toggle="modal"
+						<a href="login.html"
 						   class="btn btn-outline-primary btn-customize mr-2 d-none d-md-flex"><span>Đăng nhập</span></a>
-						<a href="#modalRegister" data-toggle="modal"
+						<a href="login.html"
 						   class="btn btn-primary btn-customize d-none d-md-flex"><span>Bắt đầu</span></a>
-						<a href="#modalLogin" data-toggle="modal"
+						<a href="login.html"
 						   class="btn btn-primary btn-customize d-flex d-md-none"><span>Tài khoản</span></a>
 					</div>
 				</div>
@@ -700,9 +595,7 @@
 	</div>
 </footer>
 
-<a href="javascript:void(0)" id="return-to-top">
-	<i class="fas fa-angle-up"></i>
-</a>
+
 
 <script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
 <script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>

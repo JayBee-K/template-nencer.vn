@@ -35,111 +35,6 @@
 </head>
 <body>
 
-<div class="modal-template">
-	<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog">
-		<div class="modal-dialog">
-			<div class="modal-content border-0">
-				<div class="login-main">
-					<div class="login-wrapper">
-						<div class="login-inner">
-							<div class="login-header">
-								<img src="./assets/images/logo.png">
-								<h1>Đăng nhập</h1>
-							</div>
-							<form class="form-effect" action="">
-								<div class="group-effect">
-									<input type="email" id="emailLogin" class="input-effect">
-									<label class="label-effect" for="emailLogin">
-										<i class="fas fa-envelope"></i>
-										<span>Email</span>
-									</label>
-								</div>
-								<div class="group-effect">
-									<input type="password" tabindex="1" name="" id="passwordLogin" class="input-effect"
-									       autocomplete="off" required="">
-									<label class="label-effect" for="passwordLogin">
-										<i class="fas fa-lock"></i>
-										<span>Mật khẩu</span>
-									</label>
-								</div>
-								<p class="text-muted">Chưa có tài khoản,
-									<a href="javascript:void(0)" class="callModal" data-name="modalRegister">
-										đăng ký ngay bây giờ</a>
-								</p>
-								<div class="form-button d-flex align-items-end justify-content-between">
-									<button type="submit" class="btn btn-primary btn-customize">
-										<span>
-											Đăng nhập
-											<i class="fas fa-sign-in-alt"></i>
-										</span>
-									</button>
-									<a href="javascript:void(0)" class="text-muted" data-dismiss="modal">Đóng</a>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade" id="modalRegister" tabindex="-1" role="dialog">
-		<div class="modal-dialog">
-			<div class="modal-content border-0">
-				<div class="login-main">
-					<div class="login-wrapper">
-						<div class="login-inner">
-							<div class="login-header">
-								<img src="./assets/images/logo.png">
-								<h1>Đăng ký</h1>
-							</div>
-							<form class="form-effect" action="">
-								<div class="group-effect">
-									<input type="text" id="fullnameRegister" class="input-effect">
-									<label class="label-effect" for="fullnameRegister">
-										<i class="fas fa-envelope"></i>
-										<span>Fullname</span>
-									</label>
-								</div>
-								<div class="group-effect">
-									<input type="email" id="emailRegister" class="input-effect">
-									<label class="label-effect" for="emailRegister">
-										<i class="fas fa-envelope"></i>
-										<span>Email</span>
-									</label>
-								</div>
-								<div class="group-effect">
-									<input type="password" tabindex="1" name="" id="passwordRegister"
-									       class="input-effect"
-									       autocomplete="off" required="">
-									<label class="label-effect" for="passwordRegister">
-										<i class="fas fa-lock"></i>
-										<span>Mật khẩu</span>
-									</label>
-								</div>
-								<p class="text-muted">
-									Đã có tài khoản,
-									<a href="javascript:void(0)" class="callModal" data-name="modalLogin">
-										Đăng nhập ngay
-									</a>
-								</p>
-								<div class="form-button d-flex align-items-end justify-content-between">
-									<button type="submit" class="btn btn-primary btn-customize">
-										<span>
-											Đăng Ký
-											<i class="fas fa-sign-out-alt"></i>
-										</span>
-									</button>
-									<a href="javascript:void(0)" class="text-muted" data-dismiss="modal">Đóng</a>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
 <header id="header">
 	<div class="header-top border-bottom bg-light">
 		<div class="container">
@@ -237,11 +132,11 @@
 					     Thêm khối div position-relative ở dưới
 					 -->
 					<div class="action-user position-relative text-md-right text-center py-2 d-flex align-items-center justify-content-end">
-						<a href="#modalLogin" data-toggle="modal"
+						<a href="login.html"
 						   class="btn btn-outline-primary btn-customize mr-2 d-none d-md-flex"><span>Đăng nhập</span></a>
-						<a href="#modalRegister" data-toggle="modal"
+						<a href="login.html"
 						   class="btn btn-primary btn-customize d-none d-md-flex"><span>Bắt đầu</span></a>
-						<a href="#modalLogin" data-toggle="modal"
+						<a href="login.html"
 						   class="btn btn-primary btn-customize d-flex d-md-none"><span>Tài khoản</span></a>
 						<!-- Đã đăng nhập -->
 						<div class="position-relative">
@@ -452,160 +347,7 @@
 			<div class="swiper-pagination"></div>
 		</div>
 	</section>
-	<section class="block-solution pt-5 pb-2 bg-white">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="heading text-center position-relative pb-5">
-						<h2 class="heading-title font-weight-bolder text-dark text-uppercase h3 mb-3">Giải pháp công
-							nghệ</h2>
-						<p class="heading-desc text-black-50 h6 mb-3 text-uppercase">
-							Mang lại hiệu quả vượt bậc trong quản lý & kinh doanh trên Internet
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-6 col-md-4 mb-4">
-					<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-solution">
-						<div class="card-header border-bottom-0 d-flex align-items-center justify-content-center position-relative bg-white mx-auto p-0">
-							<img class="card-img-top" src="./assets/images/solution/drm_solution.png"
-							     alt="Bảo mật hệ thống">
-							<div class="card-mask"></div>
-							<a href="single-solution-outsourcing.html" class="card-link-animation">
-								<span></span>
-								<span></span>
-								<span></span>
-							</a>
-						</div>
-						<div class="card-body">
-							<a href="single-solution-outsourcing.html">
-								<h5 class="card-title mb-0 font-weight-bold d-inline-block">DRM</h5>
-							</a>
-							<p class="card-text mt-3">
-								Giải pháp giúp bạn bảo vệ video trực tuyến và các tài liệu bằng mã hoá an toàn
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-6 col-md-4 mb-4">
-					<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-solution">
-						<div class="card-header border-bottom-0 d-flex align-items-center justify-content-center position-relative bg-white mx-auto p-0">
-							<img class="card-img-top" src="./assets/images/solution/security_solution.png"
-							     alt="Bảo mật hệ thống">
-							<div class="card-mask"></div>
-							<a href="single-solution-outsourcing.html" class="card-link-animation">
-								<span></span>
-								<span></span>
-								<span></span>
-							</a>
-						</div>
-						<div class="card-body">
-							<a href="single-solution-outsourcing.html">
-								<h5 class="card-title mb-0 font-weight-bold d-inline-block">Bảo mật hệ thống</h5>
-							</a>
-							<p class="card-text mt-3">NENCER là công ty cung cấp dịch vụ và giải pháp về
-								CNTT, với hơn 10 năm
-								kinh nghiệm trong lĩnh vực này</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-6 col-md-4 mb-4">
-					<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-solution">
-						<div class="card-header border-bottom-0 d-flex align-items-center justify-content-center position-relative bg-white mx-auto p-0">
-							<img class="card-img-top" src="./assets/images/solution/ocr_solution.png"
-							     alt="Bảo mật hệ thống">
-							<div class="card-mask"></div>
-							<a href="single-solution-outsourcing.html" class="card-link-animation">
-								<span></span>
-								<span></span>
-								<span></span>
-							</a>
-						</div>
-						<div class="card-body">
-							<a href="single-solution-outsourcing.html">
-								<h5 class="card-title mb-0 font-weight-bold d-inline-block">Số hoá tài liệu</h5>
-							</a>
-							<p class="card-text mt-3">
-								Quy trình quản lý tài liệu số bắt đầu bằng việc chuyển đổi các tài liệu giấy & sổ ssasch
-								sang những hồ sơ điện tử có thể lưu trữ dưới dạng file mềm
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-6 col-md-4 mb-4">
-					<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-solution">
-						<div class="card-header border-bottom-0 d-flex align-items-center justify-content-center position-relative bg-white mx-auto p-0">
-							<img class="card-img-top" src="./assets/images/solution/ecommerce_solution.png"
-							     alt="Bảo mật hệ thống">
-							<div class="card-mask"></div>
-							<a href="single-solution-outsourcing.html" class="card-link-animation">
-								<span></span>
-								<span></span>
-								<span></span>
-							</a>
-						</div>
-						<div class="card-body">
-							<a href="single-solution-outsourcing.html">
-								<h5 class="card-title mb-0 font-weight-bold d-inline-block">Quản trị bán hàng</h5>
-							</a>
-							<p class="card-text mt-3">
-								Có rất nhiều đơn vị cung cấp nền tảng website bán hàng trực tuyến. Tuy nhiên vẫn chỉ
-								thực hiện được 1 khâu trong quy trình bán hàng
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-6 col-md-4 mb-4">
-					<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-solution">
-						<div class="card-header border-bottom-0 d-flex align-items-center justify-content-center position-relative bg-white mx-auto p-0">
-							<img class="card-img-top" src="./assets/images/solution/coin_solution.png"
-							     alt="Bảo mật hệ thống">
-							<div class="card-mask"></div>
-							<a href="single-solution-outsourcing.html" class="card-link-animation">
-								<span></span>
-								<span></span>
-								<span></span>
-							</a>
-						</div>
-						<div class="card-body">
-							<a href="single-solution-outsourcing.html">
-								<h5 class="card-title mb-0 font-weight-bold d-inline-block">Blockchain</h5>
-							</a>
-							<p class="card-text mt-3">
-								Tiền mã hóa là một tài sản kỹ thuật số được thiết kế để làm việc như là một trung gian
-								trao đổi mà sử dụng mật mã để đảm bảo các giao dịch của nó mà không qua trung tâm xử lý.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-6 col-md-4 mb-4">
-					<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-solution">
-						<div class="card-header border-bottom-0 d-flex align-items-center justify-content-center position-relative bg-white mx-auto p-0">
-							<img class="card-img-top" src="./assets/images/solution/elearning_solution.png"
-							     alt="Bảo mật hệ thống">
-							<div class="card-mask"></div>
-							<a href="single-solution-outsourcing.html" class="card-link-animation">
-								<span></span>
-								<span></span>
-								<span></span>
-							</a>
-						</div>
-						<div class="card-body">
-							<a href="single-solution-outsourcing.html">
-								<h5 class="card-title mb-0 font-weight-bold d-inline-block">Học trực tuyến</h5>
-							</a>
-							<p class="card-text mt-3">
-								Giáo dục trực tuyến là hình thức đào tạo từ xa trong đó học sinh
-								không có mặt trên thực tế để tiếp thu bài học và đang bùng nổ nhờ sức mạnh của Internet.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="block-website py-md-5 pt-5 pb-3 bg-light">
+	<section class="block-website py-5 bg-white">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -885,6 +627,187 @@
 										<a href="single-app.html" class="btn btn-primary btn-customize">
 											<span>Xem thêm</span>
 										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="block-service py-5 bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="heading text-center position-relative pb-5">
+						<h2 class="heading-title font-weight-bolder text-dark text-uppercase h3 mb-3">
+							Dịch vụ nổi bật
+						</h2>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="row">
+						<div class="col-sm-6 col-lg-3 mb-4">
+							<div class="card-service p-0 card border-0 rounded-0 bg-white overflow-hidden position-relative">
+								<div class="card-header p-0 bg-transparent rounded-0 border-0">
+									<a class="d-block" href="">
+										<img src="./assets/images/service/hosting.webp" alt="" class="img-fluid">
+									</a>
+								</div>
+								<div class="card-body">
+									<div class="card-title">
+										<a href="">
+											WEB HOSTING
+										</a>
+									</div>
+									<div class="card-text">
+										Dịch vụ hosting tin cậy và hiệu suất cao, công nghệ quản lý tiên tiến giúp bạn
+										vững tâm phát triển Website.
+									</div>
+									<div class="card-list">
+										<ul class="list-unstyled mb-0">
+											<li>
+												<i class="fas fa-check-circle"></i>Hỗ trợ 24/7
+											</li>
+											<li>
+												<i class="fas fa-check-circle"></i>Giá cả phải chăng
+											</li>
+											<li>
+												<i class="fas fa-check-circle"></i>Dễ dàng nâng cấp & Downgrade
+											</li>
+										</ul>
+									</div>
+									<div class="card-price">
+										<span>29.000</span>
+										VNĐ/tháng
+									</div>
+									<div class="card-button text-center">
+										<a href="login.html"
+										   class="btn btn-primary btn-customize"><span>Xem chi tiết</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3 mb-4">
+							<div class="card-service p-0 card border-0 rounded-0 bg-white overflow-hidden position-relative">
+								<div class="card-header p-0 bg-transparent rounded-0 border-0">
+									<a class="d-block" href="">
+										<img src="./assets/images/service/vps.webp" alt="" class="img-fluid">
+									</a>
+								</div>
+								<div class="card-body">
+									<div class="card-title">
+										<a href="">
+											CLOUD VPS
+										</a>
+									</div>
+									<div class="card-text">
+										Hệ thống Cloud của BKNS sử dụng giải pháp Parallels Cloud Server (PCS) của hãng
+										Parallels.
+									</div>
+									<div class="card-list">
+										<ul class="list-unstyled mb-0">
+											<li>
+												<i class="fas fa-check-circle"></i>Hiệu suất cao, ổn định
+											</li>
+											<li>
+												<i class="fas fa-check-circle"></i>Hỗ trợ chuyển dữ liệu
+											</li>
+											<li>
+												<i class="fas fa-check-circle"></i>Miễn phí cài đặt
+											</li>
+										</ul>
+									</div>
+									<div class="card-price">
+										<span>140.000</span>
+										VNĐ/tháng
+									</div>
+									<div class="card-button text-center">
+										<a href="login.html"
+										   class="btn btn-primary btn-customize"><span>Xem chi tiết</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3 mb-4">
+							<div class="card-service p-0 card border-0 rounded-0 bg-white overflow-hidden position-relative">
+								<div class="card-header p-0 bg-transparent rounded-0 border-0">
+									<a class="d-block" href="">
+										<img src="./assets/images/service/email.webp" alt="" class="img-fluid">
+									</a>
+								</div>
+								<div class="card-body">
+									<div class="card-title">
+										<a href="">
+											EMAIL
+										</a>
+									</div>
+									<div class="card-text">
+										Kinh doanh lớn, nhỏ đều cần Email, Email là yếu tố quan trọng để bạn tiếp cận và
+										giao dịch với khách
+										hàng.
+									</div>
+									<div class="card-list">
+										<ul class="list-unstyled mb-0">
+											<li>
+												<i class="fas fa-check-circle"></i>Tạo Email theo thương hiệu công ty
+											</li>
+											<li>
+												<i class="fas fa-check-circle"></i>Hệ thống chống Spam
+											</li>
+											<li>
+												<i class="fas fa-check-circle"></i>Chống Virus và trả lời tự động
+											</li>
+										</ul>
+									</div>
+									<div class="card-price">
+										<span>45.000</span>
+										VNĐ/tháng
+									</div>
+									<div class="card-button text-center">
+										<a href="login.html"
+										   class="btn btn-primary btn-customize"><span>Xem chi tiết</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3 mb-4">
+							<div class="card-service p-0 card border-0 rounded-0 bg-white overflow-hidden position-relative">
+								<div class="card-header p-0 bg-transparent rounded-0 border-0">
+									<a class="d-block" href="">
+										<img src="./assets/images/service/ssl.webp" alt="" class="img-fluid">
+									</a>
+								</div>
+								<div class="card-body">
+									<div class="card-title">
+										<a href="">
+											SSL BẢO MẬT
+										</a>
+									</div>
+									<div class="card-text">
+										Sử dụng các sản phẩm bảo mật của chúng tôi để giúp bảo vệ an toàn cho website
+										của bạn.
+									</div>
+									<div class="card-list">
+										<ul class="list-unstyled mb-0">
+											<li>
+												<i class="fas fa-check-circle"></i>Bảo mật dữ liệu
+											</li>
+											<li>
+												<i class="fas fa-check-circle"></i>Hỗ trợ cài đặt
+											</li>
+											<li>
+												<i class="fas fa-check-circle"></i>Giá cả phải chăng
+											</li>
+										</ul>
+									</div>
+									<div class="card-price">
+										<span>Liên hệ</span>
+									</div>
+									<div class="card-button text-center">
+										<a href="login.html"
+										   class="btn btn-primary btn-customize"><span>Xem chi tiết</span></a>
 									</div>
 								</div>
 							</div>
@@ -1633,10 +1556,6 @@
 		</div>
 	</div>
 </footer>
-
-<a href="javascript:void(0)" id="return-to-top">
-	<i class="fas fa-angle-up"></i>
-</a>
 
 <script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
 <script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
