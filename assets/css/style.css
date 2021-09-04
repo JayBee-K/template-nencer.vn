@@ -1243,6 +1243,10 @@ textarea:focus {
     }
 }
 
+.card-website {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15), 0 -.5rem 1rem rgba(0, 0, 0, .05) !important;
+}
+
 .card-website .card-body img {
     max-width: 100px;
     width: 100%;
@@ -3040,7 +3044,7 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
 }
 
 .card-service .card-body .card-title > a:active,
-.card-service .card-body .card-title > a:hover{
+.card-service .card-body .card-title > a:hover {
     color: var(--color-main);
 }
 
