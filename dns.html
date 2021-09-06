@@ -29,11 +29,22 @@
 	
 	<link rel="stylesheet" href="./assets/plugin/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/plugin/select2/select2.min.css">
-	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="./assets/plugin/swiper/swiper.css">
-	<link rel="stylesheet" href="./assets/plugin/animate.css">
-	<link rel="stylesheet" href="./assets/plugin/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
+	
+	<script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="./assets/plugin/select2/select2.min.js"></script>
+	<script type="text/javascript" src="./assets/plugin/swiper/swiper.js"></script>
+	<script type="text/javascript" src="./assets/plugin/particles-js.js"></script>
+	<script type="text/javascript" src="./assets/js/theme-script.js"></script>
+	<style>
+		:root {
+			--color-main: #2879ff;
+			--color-hover: #0b3c8c;
+		}
+	</style>
 </head>
 <body class="body-dashboard">
 <div class="sidebar" id="navigation">
@@ -41,11 +52,59 @@
 		<a href="" class="d-inline-block">
 			<img src="./assets/images/logo-white.png" alt="">
 		</a>
-		<a href="javascript:void(0)" theme-action="navigation" class="action-navigation no-animation d-block d-lg-none">
-			<i></i>
-			<i></i>
-			<i></i>
-		</a>
+		<div class="ml-auto d-flex d-lg-none">
+			<a class="action-mobile" href="javascript:void(0)">
+				<i class="fas fa-envelope"></i>
+			</a>
+			<div class="d-block">
+				<a class="action-mobile d-none" href="javascript:void(0)">
+					<i class="fas fa-sign-in"></i>
+				</a>
+			</div>
+			<div class="theme-action d-none" theme-position="right" theme-action="dropdown">
+				<a class="action-mobile" href="javascript:void(0)">
+					<i class="fas fa-user-circle"></i>
+				</a>
+				<ul class="list-unstyled mb-0">
+					<li>
+						<a href="#">
+							Thông tin cá nhân
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Lịch sử giao dịch
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Bảo mật tài khoản
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Thông báo
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Đổi mật khẩu
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Đăng xuất
+						</a>
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:void(0)" theme-action="navigation"
+			   class="action-navigation no-animation">
+				<i></i>
+				<i></i>
+				<i></i>
+			</a>
+		</div>
 	</div>
 	<div class="sidebar-list">
 		<ul class="list-unstyled mb-0">
@@ -128,6 +187,12 @@
 						</a>
 					</li>
 					<li class="theme-action" theme-position="right" theme-action="dropdown">
+						<a href="javascript:void(0)">
+							<i class="fas fa-sign-in"></i>
+							<span>Đăng nhập</span>
+						</a>
+					</li>
+					<li class="theme-action d-none" theme-position="right" theme-action="dropdown">
 						<a href="javascript:void(0)">
 							<i class="fas fa-user-circle"></i>
 							<span>Nguyen Van Nghia</span>
@@ -677,12 +742,5 @@
 		</div>
 	</div>
 </div>
-
-<script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
-<script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="./assets/plugin/select2/select2.min.js"></script>
-<script type="text/javascript" src="./assets/plugin/swiper/swiper.js"></script>
-<script type="text/javascript" src="./assets/plugin/fancybox/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="./assets/js/theme-script.js"></script>
 </body>
 </html>

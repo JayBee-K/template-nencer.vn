@@ -145,7 +145,7 @@ textarea:focus {
 }
 
 .swiper-container [class*=swiper-button]:after {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Pro";
     font-weight: 900;
     font-size: 3em;
 }
@@ -504,6 +504,7 @@ textarea:focus {
     box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
     border: 1px solid #e9e9e9;
     z-index: 2;
+    pointer-events: none;
 }
 
 .header-bottom .navigation > ul > li > ul > li:not(:last-of-type) {
@@ -552,6 +553,7 @@ textarea:focus {
     top: 100%;
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
 }
 
 .header-bottom .navigation > ul > li > ul > li:hover > a {
@@ -1632,6 +1634,21 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     line-height: 1.7;
 }
 
+.banner-page .breadcrumb a {
+    color: var(--white);
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.banner-page .breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.banner-page .breadcrumb-item + .breadcrumb-item::before {
+    color: var(--white);
+    font-size: 1.3em;
+}
+
 .block-breadcrumb .breadcrumb {
     margin-bottom: 0;
     width: 100%;
@@ -1960,7 +1977,7 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
 .card-item .card-item-content li:before {
     content: "\f00c";
     color: var(--color-hover);
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Pro";
     font-size: 13px;
     font-weight: 900;
     text-align: center;
@@ -2013,7 +2030,14 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     color: #ff0000;
     font-weight: 700;
     font-size: 1.3em;
-    margin-left: 8px;
+    margin-left: 4px;
+}
+
+.single-app .app-top .app-content .app-inner .app-price .price-old {
+    color: var(--text-gray);
+    text-decoration: line-through;
+    font-weight: 500;
+    font-size: 1.1em;
 }
 
 .single-app .app-top .app-content .app-inner .app-action {
@@ -2304,6 +2328,7 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
         -webkit-box-shadow: none;
         box-shadow: none;
         background-color: #f8f9fa !important;
+        pointer-events: auto;
     }
 
     .header-bottom .navigation > ul > li > ul:before,
@@ -2412,7 +2437,7 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
 
 
     footer .toggled-footer:after {
-        font-family: "Font Awesome 5 Free";
+        font-family: "Font Awesome 5 Pro";
         font-weight: 900;
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
@@ -3100,9 +3125,38 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
 .body-dashboard {
     background: #fff;
     font-size: 14px;
+    line-height: 1.5;
     overflow-x: hidden;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     min-height: 100vh;
+}
+
+.body-dashboard a, .body-dashboard a:hover, .body-dashboard a:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
+    -webkit-transition: 0.3s all ease-out;
+}
+
+.body-dashboard input,
+.body-dashboard select,
+.body-dashboard textarea {
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
+    -webkit-transition: 0.3s all ease-out;
+}
+
+.body-dashboard input:focus,
+.body-dashboard select:focus,
+.body-dashboard textarea:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: var(--color-main) !important;
 }
 
 .text-decoration-underline {
@@ -3189,17 +3243,17 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     transform: translateY(-5px);
 }
 
-.sidebar::-webkit-scrollbar-track {
+.body-dashboard .sidebar::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #fff;
 }
 
-.sidebar::-webkit-scrollbar {
+.body-dashboard .sidebar::-webkit-scrollbar {
     width: 6px;
     background-color: #fff;
 }
 
-.sidebar::-webkit-scrollbar-thumb {
+.body-dashboard .sidebar::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #e9e9e9;
 }
@@ -3209,26 +3263,47 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
         position: relative;
         width: 100%;
         height: auto;
+        overflow: unset;
     }
 
     .body-dashboard .sidebar .sidebar-logo {
-        margin-bottom: 15px;
+        height: 75px;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 15px;
         position: relative;
+        justify-content: flex-start;
+    }
+
+    .body-dashboard .sidebar .sidebar-logo .action-mobile {
+        width: 34px;
+        height: 34px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 10px;
+        border-radius: 4px;
+        background: #f8fbff;
+        color: #454545;
+        font-size: 1.1em;
+    }
+
+    .body-dashboard .sidebar .sidebar-logo .theme-action.show > ul {
+        top: calc(100% + 10px);
     }
 
     .body-dashboard .sidebar .sidebar-logo .action-navigation {
         width: 34px;
-        height: 32px;
-        position: absolute;
+        height: 34px;
+        position: relative;
         display: flex !important;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         flex-shrink: 0;
         border-radius: 4px;
-        top: 50%;
-        right: 15px;
-        transform: translateY(-50%);
+        margin-right: -5px;
     }
 
     .body-dashboard .sidebar .sidebar-logo .action-navigation i {
@@ -4764,20 +4839,22 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     background: var(--success);
 }
 
-.demo-slide > a {
+.demo-slide {
     position: relative;
     display: block;
     overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #e9e9e9;
 }
 
-.demo-slide > a > img {
+.demo-slide > img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-.demo-slide > a:after {
+.demo-slide:after {
     position: absolute;
     display: block;
     content: "";
@@ -4790,11 +4867,11 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     z-index: 2;
 }
 
-.demo-slide > a:hover:after {
+.demo-slide:hover:after {
     height: 100%;
 }
 
-.demo-slide > a > .button-group {
+.demo-slide > .button-group {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -4807,14 +4884,14 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     white-space: nowrap;
 }
 
-.demo-slide > a:hover > .button-group {
+.demo-slide:hover > .button-group {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
 
-.demo-slide > a:hover > .button-group {
+.demo-slide:hover > .button-group {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     visibility: visible;
