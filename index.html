@@ -40,7 +40,7 @@
 	<div class="header-top border-bottom bg-light">
 		<div class="container">
 			<div class="row justify-content-between">
-				<div class="col-sm-6 col-8">
+				<div class="col-xl-6 col-md-4 col-sm-6 col-8">
 					<div class="d-flex align-items-center justify-content-start">
 						<div class="language d-flex align-items-center justify-content-center py-2">
 							<a href="javascript:void(0)">
@@ -127,15 +127,28 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-4">
+				<div class="col-xl-6 col-md-8 col-sm-6 col-4">
 					<!-- Phần mới
 					     Thêm 2 class: action-user và postion-relative ở thẻ div phía dưới
 					     Thêm khối div position-relative ở dưới
 					 -->
 					<div class="action-user position-relative text-md-right text-center py-2 d-flex align-items-center justify-content-end">
-						<a href="login.html"
+						<!-- Chỗ này chỉ hiển thị trên desktop -->
+						<a href="" class="link-header d-none d-lg-inline-block">
+							<span><i class="fal fa-dollar-sign"></i></span>
+							Số dư: 199.000 <sup>đ</sup>
+						</a>
+						<a href="" class="link-header d-none d-lg-inline-block">
+							Dashboard
+						</a>
+						<a href="" class="link-header d-none d-lg-inline-block">
+							DNS
+						</a>
+						<!-- End -->
+						
+						<a href="login.html" style="display:none !important;"
 						   class="btn btn-outline-primary btn-customize mr-2 d-none d-md-flex"><span>Đăng nhập</span></a>
-						<a href="login.html"
+						<a href="login.html" style="display:none !important;"
 						   class="btn btn-primary btn-customize d-none d-md-flex"><span>Bắt đầu</span></a>
 						<a href="login.html"
 						   class="btn btn-primary btn-customize d-flex d-md-none"><span>Tài khoản</span></a>
@@ -169,13 +182,29 @@
 						</div>
 					</div>
 				</div>
+				<!-- Chỗ này chỉ hiển thị trên mobile và sau khi login -->
+				<div class="col-12 d-lg-none">
+					<div class="action-user position-relative d-flex align-items-center justify-content-center">
+						<a href="" class="link-header">
+							<span><i class="fal fa-dollar-sign"></i></span>
+							Số dư: 199.000 <sup>đ</sup>
+						</a>
+						<a href="" class="link-header">
+							Dashboard
+						</a>
+						<a href="" class="link-header">
+							DNS
+						</a>
+					</div>
+				</div>
+				<!-- End -->
 			</div>
 		</div>
 	</div>
 	<div class="header-bottom bg-white">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3">
+				<div class="col-xl-3 col-lg-2">
 					<div class="logo">
 						<a href="#" class="d-inline-block">
 							<img src="./assets/images/logo.png" alt="Logo - Nencer.vn">
@@ -185,7 +214,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-9">
+				<div class="col-xl-9 col-lg-10">
 					<div class="navigation">
 						<ul class="list-unstyled mb-0 d-lg-flex align-items-center justify-content-end" id="hasMenu">
 							<li>
