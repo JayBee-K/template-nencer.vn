@@ -35,90 +35,6 @@
 	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-<div class="modal-template">
-	<div class="modal fade" id="modalContact" tabindex="-1" role="dialog">
-		<div class="modal-dialog">
-			<div class="modal-content border-0">
-				<div class="login-main">
-					<div class="login-wrapper">
-						<div class="login-inner">
-							<div class="login-header">
-								<img src="./assets/images/logo.png">
-								<h1>Báo Giá Theo Yêu Cầu Website</h1>
-							</div>
-							<form class="form-effect" action="">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="group-effect">
-											<input type="text" id="titleContact" class="input-effect">
-											<label class="label-effect" for="titleContact">
-												<i class="fas fa-envelope"></i>
-												<span>Fullname</span>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="group-effect">
-											<input type="text" id="fullnameContact" class="input-effect">
-											<label class="label-effect" for="fullnameContact">
-												<i class="fas fa-address-card"></i>
-												<span>Fullname</span>
-											</label>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="group-effect">
-											<input type="text" id="phoneContact" class="input-effect">
-											<label class="label-effect" for="phoneContact">
-												<i class="fas fa-phone-alt"></i>
-												<span>Số điện thoại</span>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="group-effect">
-											<input type="email" id="emailContact" class="input-effect">
-											<label class="label-effect" for="emailContact">
-												<i class="fas fa-envelope"></i>
-												<span>Email</span>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="group-effect group-textarea">
-											<textarea name="your-message" id="messageContact" class="input-effect"
-											          autocomplete="off"></textarea>
-											<label class="label-effect" for="messageContact">
-												<i class="fas fa-comment-dots"></i>
-												<span>Nội dung</span>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="form-button d-flex align-items-end justify-content-between">
-									<button type="submit" class="btn btn-primary btn-customize">
-										<span>
-											Gửi liên hệ
-											<i class="fas fa-share-square"></i>
-										</span>
-									</button>
-									<a href="javascript:void(0)" class="text-muted" data-dismiss="modal">Đóng</a>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
 <header id="header">
 	<div class="header-top border-bottom bg-light">
 		<div class="container">
@@ -339,6 +255,75 @@
 			</div>
 		</div>
 	</section>
+	
+	<div class="modal-template">
+		<div class="modal fade" id="modalContact" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content border-0 overflow-hidden">
+					<div class="modal-main">
+						<div class="modal-wrapper">
+							<div class="modal-inner">
+								<div class="modal-header">
+									<div class="modal-header_title">Báo Giá Theo Yêu Cầu Website</div>
+								</div>
+								<form class="form-effect" action="">
+									<div class="row row-5">
+										<div class="col-md-4">
+											<div class="group-effect">
+												<input type="text" id="fullnameContact" class="input-effect">
+												<label class="label-effect" for="fullnameContact">
+													<i class="fas fa-address-card"></i>
+													<span>Fullname</span>
+												</label>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="group-effect">
+												<input type="text" id="phoneContact" class="input-effect">
+												<label class="label-effect" for="phoneContact">
+													<i class="fas fa-phone-alt"></i>
+													<span>Số điện thoại</span>
+												</label>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="group-effect">
+												<input type="email" id="emailContact" class="input-effect">
+												<label class="label-effect" for="emailContact">
+													<i class="fas fa-envelope"></i>
+													<span>Email</span>
+												</label>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="group-effect group-textarea">
+											<textarea name="your-message" id="messageContact" class="input-effect"
+											          autocomplete="off"></textarea>
+												<label class="label-effect" for="messageContact">
+													<i class="fas fa-comment-dots"></i>
+													<span>Nội dung</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-button d-flex align-items-end justify-content-between">
+										<button type="submit" class="btn btn-primary btn-customize">
+										<span>
+											Gửi liên hệ
+											<i class="fas fa-share-square"></i>
+										</span>
+										</button>
+										<a href="javascript:void(0)" class="text-muted" data-dismiss="modal">Đóng</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	<section class="single-app py-5">
 		<div class="app-top">
 			<div class="container">
@@ -389,7 +374,7 @@
 												<a href="javascript:void(0)"
 												   class="btn btn-success btn-customize w-100"><span><i
 														class="fa fa-cart-plus mr-1"></i>Mua ngay</span></a>
-												<a href="javascript:void(0)"
+												<a href="#modalContact" data-toggle="modal"
 												   class="btn btn-primary btn-customize w-100 mt-2"><span><i
 														class="fa fa-download mr-1"></i>Tải báo giá</span></a>
 											</div>
@@ -595,301 +580,329 @@
 						</div>
 					</div>
 				</div>
-				<div class="border bg-white mt-3">
-					<div class="row">
-						<div class="col-12">
-							<div class="block-related">
-								<div class="p-3">
-									<div class="heading-related">
-										Các module khác
+			</div>
+		</div>
+		<div class="form-contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="heading text-center position-relative pb-5">
+							<h2 class="heading-title font-weight-bolder text-dark text-uppercase h3 mb-3">Để lại thông
+								tin</h2>
+							<p class="heading-desc text-black-50 h6 mb-3 text-uppercase">
+								Chúng tôi sẽ liên hệ và tư vấn đến bạn nhanh nhất
+							</p>
+						</div>
+					</div>
+					<div class="col-12">
+						<form action="" class="mb-0 form-inline justify-content-center">
+							<input type="text" class="form-control mb-2 mr-sm-2"
+							       placeholder="Fullname">
+							<input type="email" class="form-control mb-2 mr-sm-2"
+							       placeholder="Email">
+							<input type="tel" class="form-control mb-2 mr-sm-2"
+							       placeholder="Số điện thoại">
+							<button class="btn btn-primary btn-customize mb-2"><span>Gửi liên hệ</span></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="border bg-white">
+				<div class="row">
+					<div class="col-12">
+						<div class="block-related">
+							<div class="p-3">
+								<div class="heading-related">
+									Các module khác
+								</div>
+							</div>
+							<div class="row mt-3">
+								<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+									<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+										<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+											<img class="card-img-top" src="./assets/images/module/paypal.jpg"
+											     alt="Cổng thanh toán Paypal">
+											<div class="card-mask"></div>
+											<a href="single-module.html" class="card-link-animation">
+												<span></span>
+												<span></span>
+												<span></span>
+											</a>
+										</div>
+										<div class="card-body">
+											<a href="single-module.html">
+												<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
+													thanh toán
+													Paypal</h5>
+											</a>
+											<div class="card-price">
+												2.000.000 VNĐ
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="row mt-3">
-									<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-										<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-											<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-												<img class="card-img-top" src="./assets/images/module/paypal.jpg"
-												     alt="Cổng thanh toán Paypal">
-												<div class="card-mask"></div>
-												<a href="single-module.html" class="card-link-animation">
-													<span></span>
-													<span></span>
-													<span></span>
-												</a>
-											</div>
-											<div class="card-body">
-												<a href="single-module.html">
-													<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
-														thanh toán
-														Paypal</h5>
-												</a>
-												<div class="card-price">
-													2.000.000 VNĐ
-												</div>
+								<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+									<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+										<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto ">
+											<img class="card-img-top" src="./assets/images/module/nganluong.jpg"
+											     alt="Bảo mật hệ thống">
+											<div class="card-mask"></div>
+											<a href="single-module.html" class="card-link-animation">
+												<span></span>
+												<span></span>
+												<span></span>
+											</a>
+										</div>
+										<div class="card-body">
+											<a href="single-module.html">
+												<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
+													thanh toán Ngân
+													Lượng</h5>
+											</a>
+											<div class="card-price">
+												1.000.000 VNĐ
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-										<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-											<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto ">
-												<img class="card-img-top" src="./assets/images/module/nganluong.jpg"
-												     alt="Bảo mật hệ thống">
-												<div class="card-mask"></div>
-												<a href="single-module.html" class="card-link-animation">
-													<span></span>
-													<span></span>
-													<span></span>
-												</a>
-											</div>
-											<div class="card-body">
-												<a href="single-module.html">
-													<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
-														thanh toán Ngân
-														Lượng</h5>
-												</a>
-												<div class="card-price">
-													1.000.000 VNĐ
-												</div>
+								</div>
+								<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+									<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+										<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+											<img class="card-img-top" src="./assets/images/module/onepay.jpg"
+											     alt="Cổng thanh toán Onepay">
+											<div class="card-mask"></div>
+											<a href="single-module.html" class="card-link-animation">
+												<span></span>
+												<span></span>
+												<span></span>
+											</a>
+										</div>
+										<div class="card-body">
+											<a href="single-module.html">
+												<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
+													thanh toán
+													Onepay</h5>
+											</a>
+											<div class="card-price">
+												2.000.000 VNĐ
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-										<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-											<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-												<img class="card-img-top" src="./assets/images/module/onepay.jpg"
-												     alt="Cổng thanh toán Onepay">
-												<div class="card-mask"></div>
-												<a href="single-module.html" class="card-link-animation">
-													<span></span>
-													<span></span>
-													<span></span>
-												</a>
-											</div>
-											<div class="card-body">
-												<a href="single-module.html">
-													<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
-														thanh toán
-														Onepay</h5>
-												</a>
-												<div class="card-price">
-													2.000.000 VNĐ
-												</div>
+								</div>
+								<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+									<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+										<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+											<img class="card-img-top" src="./assets/images/module/momo_p.jpg"
+											     alt="Cổng thanh toán Momo">
+											<div class="card-mask"></div>
+											<a href="single-module.html" class="card-link-animation">
+												<span></span>
+												<span></span>
+												<span></span>
+											</a>
+										</div>
+										<div class="card-body">
+											<a href="single-module.html">
+												<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
+													thanh toán
+													Momo</h5>
+											</a>
+											<div class="card-price">
+												10.000.000 VNĐ
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-										<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-											<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-												<img class="card-img-top" src="./assets/images/module/momo_p.jpg"
-												     alt="Cổng thanh toán Momo">
-												<div class="card-mask"></div>
-												<a href="single-module.html" class="card-link-animation">
-													<span></span>
-													<span></span>
-													<span></span>
-												</a>
-											</div>
-											<div class="card-body">
-												<a href="single-module.html">
-													<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
-														thanh toán
-														Momo</h5>
-												</a>
-												<div class="card-price">
-													10.000.000 VNĐ
-												</div>
+								</div>
+								<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+									<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+										<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+											<img class="card-img-top" src="./assets/images/module/zalopay.jpg"
+											     alt="Cổng thanh toán Zalopay">
+											<div class="card-mask"></div>
+											<a href="single-module.html" class="card-link-animation">
+												<span></span>
+												<span></span>
+												<span></span>
+											</a>
+										</div>
+										<div class="card-body">
+											<a href="single-module.html">
+												<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
+													thanh toán
+													Zalopay</h5>
+											</a>
+											<div class="card-price">
+												15.000.000 VNĐ
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-										<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-											<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-												<img class="card-img-top" src="./assets/images/module/zalopay.jpg"
-												     alt="Cổng thanh toán Zalopay">
-												<div class="card-mask"></div>
-												<a href="single-module.html" class="card-link-animation">
-													<span></span>
-													<span></span>
-													<span></span>
-												</a>
-											</div>
-											<div class="card-body">
-												<a href="single-module.html">
-													<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
-														thanh toán
-														Zalopay</h5>
-												</a>
-												<div class="card-price">
-													15.000.000 VNĐ
-												</div>
+								</div>
+								<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+									<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+										<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+											<img class="card-img-top" src="./assets/images/module/vnpay.jpg"
+											     alt="Cổng thanh toán VNpay">
+											<div class="card-mask"></div>
+											<a href="single-module.html" class="card-link-animation">
+												<span></span>
+												<span></span>
+												<span></span>
+											</a>
+										</div>
+										<div class="card-body">
+											<a href="single-module.html">
+												<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
+													thanh toán
+													Vnpay</h5>
+											</a>
+											<div class="card-price">
+												8.000.000 VNĐ
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-										<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-											<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-												<img class="card-img-top" src="./assets/images/module/vnpay.jpg"
-												     alt="Cổng thanh toán VNpay">
-												<div class="card-mask"></div>
-												<a href="single-module.html" class="card-link-animation">
-													<span></span>
-													<span></span>
-													<span></span>
-												</a>
-											</div>
-											<div class="card-body">
-												<a href="single-module.html">
-													<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
-														thanh toán
-														Vnpay</h5>
-												</a>
-												<div class="card-price">
-													8.000.000 VNĐ
-												</div>
+								</div>
+								<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+									<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+										<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+											<img class="card-img-top" src="./assets/images/module/paypal.jpg"
+											     alt="Cổng thanh toán Paypal">
+											<div class="card-mask"></div>
+											<a href="single-module.html" class="card-link-animation">
+												<span></span>
+												<span></span>
+												<span></span>
+											</a>
+										</div>
+										<div class="card-body">
+											<a href="single-module.html">
+												<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
+													thanh toán
+													Paypal</h5>
+											</a>
+											<div class="card-price">
+												2.000.000 VNĐ
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-										<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-											<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-												<img class="card-img-top" src="./assets/images/module/paypal.jpg"
-												     alt="Cổng thanh toán Paypal">
-												<div class="card-mask"></div>
-												<a href="single-module.html" class="card-link-animation">
-													<span></span>
-													<span></span>
-													<span></span>
-												</a>
-											</div>
-											<div class="card-body">
-												<a href="single-module.html">
-													<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
-														thanh toán
-														Paypal</h5>
-												</a>
-												<div class="card-price">
-													2.000.000 VNĐ
-												</div>
+								</div>
+								<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+									<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+										<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto ">
+											<img class="card-img-top" src="./assets/images/module/nganluong.jpg"
+											     alt="Bảo mật hệ thống">
+											<div class="card-mask"></div>
+											<a href="single-module.html" class="card-link-animation">
+												<span></span>
+												<span></span>
+												<span></span>
+											</a>
+										</div>
+										<div class="card-body">
+											<a href="single-module.html">
+												<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
+													thanh toán Ngân
+													Lượng</h5>
+											</a>
+											<div class="card-price">
+												1.000.000 VNĐ
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-										<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-											<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto ">
-												<img class="card-img-top" src="./assets/images/module/nganluong.jpg"
-												     alt="Bảo mật hệ thống">
-												<div class="card-mask"></div>
-												<a href="single-module.html" class="card-link-animation">
-													<span></span>
-													<span></span>
-													<span></span>
-												</a>
-											</div>
-											<div class="card-body">
-												<a href="single-module.html">
-													<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
-														thanh toán Ngân
-														Lượng</h5>
-												</a>
-												<div class="card-price">
-													1.000.000 VNĐ
-												</div>
+								</div>
+								<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+									<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+										<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+											<img class="card-img-top" src="./assets/images/module/onepay.jpg"
+											     alt="Cổng thanh toán Onepay">
+											<div class="card-mask"></div>
+											<a href="single-module.html" class="card-link-animation">
+												<span></span>
+												<span></span>
+												<span></span>
+											</a>
+										</div>
+										<div class="card-body">
+											<a href="single-module.html">
+												<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
+													thanh toán
+													Onepay</h5>
+											</a>
+											<div class="card-price">
+												2.000.000 VNĐ
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-										<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-											<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-												<img class="card-img-top" src="./assets/images/module/onepay.jpg"
-												     alt="Cổng thanh toán Onepay">
-												<div class="card-mask"></div>
-												<a href="single-module.html" class="card-link-animation">
-													<span></span>
-													<span></span>
-													<span></span>
-												</a>
-											</div>
-											<div class="card-body">
-												<a href="single-module.html">
-													<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
-														thanh toán
-														Onepay</h5>
-												</a>
-												<div class="card-price">
-													2.000.000 VNĐ
-												</div>
+								</div>
+								<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+									<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+										<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+											<img class="card-img-top" src="./assets/images/module/momo_p.jpg"
+											     alt="Cổng thanh toán Momo">
+											<div class="card-mask"></div>
+											<a href="single-module.html" class="card-link-animation">
+												<span></span>
+												<span></span>
+												<span></span>
+											</a>
+										</div>
+										<div class="card-body">
+											<a href="single-module.html">
+												<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
+													thanh toán
+													Momo</h5>
+											</a>
+											<div class="card-price">
+												10.000.000 VNĐ
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-										<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-											<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-												<img class="card-img-top" src="./assets/images/module/momo_p.jpg"
-												     alt="Cổng thanh toán Momo">
-												<div class="card-mask"></div>
-												<a href="single-module.html" class="card-link-animation">
-													<span></span>
-													<span></span>
-													<span></span>
-												</a>
-											</div>
-											<div class="card-body">
-												<a href="single-module.html">
-													<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
-														thanh toán
-														Momo</h5>
-												</a>
-												<div class="card-price">
-													10.000.000 VNĐ
-												</div>
+								</div>
+								<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+									<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+										<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+											<img class="card-img-top" src="./assets/images/module/zalopay.jpg"
+											     alt="Cổng thanh toán Zalopay">
+											<div class="card-mask"></div>
+											<a href="single-module.html" class="card-link-animation">
+												<span></span>
+												<span></span>
+												<span></span>
+											</a>
+										</div>
+										<div class="card-body">
+											<a href="single-module.html">
+												<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
+													thanh toán
+													Zalopay</h5>
+											</a>
+											<div class="card-price">
+												15.000.000 VNĐ
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-										<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-											<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-												<img class="card-img-top" src="./assets/images/module/zalopay.jpg"
-												     alt="Cổng thanh toán Zalopay">
-												<div class="card-mask"></div>
-												<a href="single-module.html" class="card-link-animation">
-													<span></span>
-													<span></span>
-													<span></span>
-												</a>
-											</div>
-											<div class="card-body">
-												<a href="single-module.html">
-													<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
-														thanh toán
-														Zalopay</h5>
-												</a>
-												<div class="card-price">
-													15.000.000 VNĐ
-												</div>
-											</div>
+								</div>
+								<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
+									<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
+										<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
+											<img class="card-img-top" src="./assets/images/module/vnpay.jpg"
+											     alt="Cổng thanh toán VNpay">
+											<div class="card-mask"></div>
+											<a href="single-module.html" class="card-link-animation">
+												<span></span>
+												<span></span>
+												<span></span>
+											</a>
 										</div>
-									</div>
-									<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-										<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-											<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-												<img class="card-img-top" src="./assets/images/module/vnpay.jpg"
-												     alt="Cổng thanh toán VNpay">
-												<div class="card-mask"></div>
-												<a href="single-module.html" class="card-link-animation">
-													<span></span>
-													<span></span>
-													<span></span>
-												</a>
-											</div>
-											<div class="card-body">
-												<a href="single-module.html">
-													<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
-														thanh toán
-														Vnpay</h5>
-												</a>
-												<div class="card-price">
-													8.000.000 VNĐ
-												</div>
+										<div class="card-body">
+											<a href="single-module.html">
+												<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng
+													thanh toán
+													Vnpay</h5>
+											</a>
+											<div class="card-price">
+												8.000.000 VNĐ
 											</div>
 										</div>
 									</div>
@@ -901,6 +914,7 @@
 			</div>
 		</div>
 	</section>
+
 </div>
 <footer id="footer" class="bg-light">
 	<div class="footer-top py-4 border-top">
@@ -1060,20 +1074,6 @@
 		</div>
 	</div>
 </footer>
-
-<div class="float-button">
-	<div class="float-inner">
-		<a href="#modalContact" data-toggle="modal">
-			<div class="float-icon">
-				<i class="fas fa-envelope"></i>
-			</div>
-			<div class="float-text">
-				Liên hệ
-			</div>
-		</a>
-	</div>
-</div>
-
 
 <script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
 <script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
