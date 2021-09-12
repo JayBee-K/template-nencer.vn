@@ -414,6 +414,7 @@ textarea:focus {
     box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
     border: 1px solid #e9e9e9;
     z-index: 999999999;
+    pointer-events: none;
 }
 
 .header-top .action-user .position-relative > ul:before, .header-top .action-user .position-relative > ul:after {
@@ -462,6 +463,7 @@ textarea:focus {
     top: calc(100% + 8px);
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
 }
 
 .header-top .action-user .position-relative > ul > li:hover > a {
@@ -1246,10 +1248,6 @@ textarea:focus {
     font-size: .9em;
 }
 
-.page-website .card-website .card-body .card-action {
-    flex-direction: column;
-}
-
 .page-website .card-website .card-body .card-action .btn {
     margin-top: 10px;
 }
@@ -1287,6 +1285,7 @@ textarea:focus {
     color: var(--color-main);
 }
 
+
 .card-website .meta span {
     position: relative;
     display: block;
@@ -1314,6 +1313,30 @@ textarea:focus {
 .card-website .card-text {
     line-height: 1.8;
     color: #454545;
+}
+
+.card-website .card-body .card-action > div {
+    flex-wrap: wrap;
+    justify-content: flex-start !important;
+    width: 60%;
+    flex-shrink: 0;
+    line-height: 1.3;
+}
+
+.card-website .card-body .card-action > div .price {
+    font-size: 1.6em;
+}
+
+.card-website .card-body .card-action > div .price-old {
+    width: 100%;
+    color: #a9a9a9;
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 991px) {
+    .card-website .card-body .card-action > div {
+        width: 50%;
+    }
 }
 
 /* End Block website */
