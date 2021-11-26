@@ -5077,3 +5077,38 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
 .bg-light {
     background-color: #e9eef3 !important;
 }
+
+
+.app-description h1,
+.app-description h2,
+.app-description h3,
+.app-description h4,
+.app-description h5,
+.app-description h6 {
+    font-weight: 700;
+    color: #232323;
+}
+
+.app-description h6 {
+    font-size: 1.1em;
+}
+
+.app-description h5 {
+    font-size: 1.3em;
+}
+
+.app-description h4 {
+    font-size: 1.5em;
+}
+
+.app-description h3 {
+    font-size: 1.7em;
+}
+
+.app-description h2 {
+    font-size: 1.9em;
+}
+
+.app-description h1 {
+    font-size: 2.1em;
+}
