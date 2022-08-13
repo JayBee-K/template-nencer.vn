@@ -3,18 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e788b272-1d2b-49af-bcc3-92d93d064afa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/app.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hosting.html" beforeDir="false" afterPath="$PROJECT_DIR$/hosting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module.html" beforeDir="false" afterPath="$PROJECT_DIR$/module.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outsourcing.html" beforeDir="false" afterPath="$PROJECT_DIR$/outsourcing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-app.html" beforeDir="false" afterPath="$PROJECT_DIR$/single-app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-module.html" beforeDir="false" afterPath="$PROJECT_DIR$/single-module.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-service.html" beforeDir="false" afterPath="$PROJECT_DIR$/single-service.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-solution-outsourcing.html" beforeDir="false" afterPath="$PROJECT_DIR$/single-solution-outsourcing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solution.html" beforeDir="false" afterPath="$PROJECT_DIR$/solution.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template-nencer.zip" beforeDir="false" afterPath="$PROJECT_DIR$/template-nencer.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template-nencer.vn.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/plugin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -56,13 +47,14 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Source-aNeo\template-nencer.vn" />
       <recent name="F:\Source-aNeo\template-nencer.vn\assets\plugin" />
       <recent name="F:\Source-aNeo\template-nencer.vn\assets\images" />
-      <recent name="F:\Source-aNeo\template-nencer.vn" />
       <recent name="F:\Source-aNeo\template-nencer.vn\assets\fonts\fontawesome" />
       <recent name="F:\Source-aNeo\template-nencer.vn\template\assets\fonts\fontawesome" />
     </key>
@@ -109,6 +101,28 @@
       <workItem from="1630902250231" duration="354000" />
       <workItem from="1630902791336" duration="560000" />
       <workItem from="1630922724096" duration="214000" />
+      <workItem from="1630923672065" duration="287000" />
+      <workItem from="1630939890465" duration="219000" />
+      <workItem from="1630976237531" duration="406000" />
+      <workItem from="1630996293433" duration="1912000" />
+      <workItem from="1630998458479" duration="62000" />
+      <workItem from="1631012026661" duration="629000" />
+      <workItem from="1631063077246" duration="610000" />
+      <workItem from="1631091108143" duration="912000" />
+      <workItem from="1631102686929" duration="276000" />
+      <workItem from="1631103417871" duration="2226000" />
+      <workItem from="1631150777265" duration="309000" />
+      <workItem from="1631162835787" duration="2080000" />
+      <workItem from="1631171081312" duration="99000" />
+      <workItem from="1631178903154" duration="46000" />
+      <workItem from="1631179060263" duration="46000" />
+      <workItem from="1631189926578" duration="429000" />
+      <workItem from="1631190609545" duration="193000" />
+      <workItem from="1631191982331" duration="174000" />
+      <workItem from="1631193189983" duration="278000" />
+      <workItem from="1631238148465" duration="14000" />
+      <workItem from="1632214313493" duration="618000" />
+      <workItem from="1660372637068" duration="1787000" />
     </task>
     <servers />
   </component>
