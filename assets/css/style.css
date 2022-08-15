@@ -5296,3 +5296,52 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     -o-filter: grayscale(0);
     filter: grayscale(0);
 }
+
+.card-module .card-header {
+    padding: .35rem;
+}
+
+.card-module .card-body {
+    padding: 8px 8px 0;
+}
+
+.card-module .card-body .card-title,
+.card-module .card-body .card-price {
+    font-size: 1em;
+}
+
+@media screen and (min-width: 1200px) {
+    .col-lg-125 {
+        -ms-flex: 0 0 12.5%;
+        flex: 0 0 12.5%;
+        max-width: 12.5%;
+    }
+}
+
+
+.card-service .card-body .card-title > a {
+    font-size: 1.6em;
+}
+
+.card-service .card-body .card-price {
+    font-size: 1.05em;
+}
+
+.single-app .app-top .app-content .app-inner .app-price {
+    display: flex;
+    align-items: center;
+}
+
+.single-app .app-top .app-content .app-inner .app-price p {
+    font-size: 1em;
+}
+
+.single-app .app-top .app-content .app-inner .app-price text,
+.single-app .app-top .app-content .app-inner .app-price .price-old {
+    margin-left: .55rem;
+}
+
+.single-app .app-top .app-content .app-title h1 {
+    font-size: 1.3rem;
+    line-height: 1.45;
+}
