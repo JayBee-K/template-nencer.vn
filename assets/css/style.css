@@ -71,6 +71,18 @@ textarea:focus {
     padding-right: 10px;
 }
 
+.row.row-col-15 {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -15px;
+}
+
+.row.row-col-15 [class*=col] {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+}
+
 /* Customize */
 .row.row-5 {
     margin-left: -5px;
@@ -5344,4 +5356,16 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
 .single-app .app-top .app-content .app-title h1 {
     font-size: 1.3rem;
     line-height: 1.45;
+}
+
+.app-desc_required li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.app-form {
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 45px;
+    background-color: #eff3fa;
 }
