@@ -5209,7 +5209,7 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
 }
 
 .articles-item .articles-thumb {
-    width: 25%;
+    width: 30%;
     -ms-flex-negative: 0;
     flex-shrink: 0;
     border-radius: 4px;
@@ -5256,13 +5256,20 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     font-size: 1.05em;
 }
 
+.articles-item .articles-content .articles-time {
+    color: #828386;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: .95em;
+}
+
 .articles-item .articles-content .articles-text {
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    color: #656669;
+    color: #535354;
 }
 
 .articles-item + .articles-item {
@@ -5366,6 +5373,22 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
 .app-form {
     border-radius: 20px;
     overflow: hidden;
-    padding: 45px;
+    padding: 30px;
     background-color: #eff3fa;
+}
+
+.app-form .form-group {
+    margin-bottom: 0;
+}
+
+.app-form .form-group .form-control {
+    border-radius: 4px;
+}
+
+.app-form .heading .heading-title {
+    font-size: 1.45rem;
+}
+
+.app-form .heading:not(.heading-noBottom):after {
+    bottom: 20px;
 }
