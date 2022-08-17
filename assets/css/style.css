@@ -2182,10 +2182,6 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     padding-bottom: 10px;
 }
 
-.wrapper-table {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
 .table-theme {
     font-size: 1.05em;
     border: 1px solid #e9e9e9;
