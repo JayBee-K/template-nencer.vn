@@ -5383,7 +5383,9 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     border-radius: 20px;
     overflow: hidden;
     padding: 30px;
-    background-color: #eff3fa;
+    border: 1px solid #e9e9e9;
+    background-color: #fff;
+    box-shadow: rgb(100 100 111 / 10%) 0px 1px 15px 0px;
 }
 
 .app-form .form-group {
@@ -5400,6 +5402,11 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
 
 .app-form .heading:not(.heading-noBottom):after {
     bottom: 20px;
+}
+
+.app-form .btn-customize span {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .images-item {
