@@ -5456,7 +5456,7 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
 .app-quote {
     padding: 15px;
     border-left: 3px solid var(--color-main);
-    background-color: #efefef;
+    background-color: #ebebeb;
     display: flex;
 }
 
@@ -5478,10 +5478,12 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     color: #212121;
     margin-bottom: 10px;
 }
+
 .app-quote .app-quote_content .links {
     flex-direction: column;
-    display: flex;
+    display: inline-flex;
 }
+
 .app-quote .app-quote_content .links a:hover {
     text-decoration: underline !important;
 }
