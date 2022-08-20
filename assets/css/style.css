@@ -5375,13 +5375,37 @@ footer .footer-inner .footer-info ul li:not(:last-of-type) {
     font-size: 1.1em;
 }
 
-.app-form {
+.mt-85 {
+    margin-top: 85px;
+}
+
+.app-form_heading {
     border-radius: 8px;
     overflow: hidden;
-    padding: 30px;
     border: 1px solid #cdcdcd;
     background-color: #fff;
     box-shadow: rgb(100 100 111 / 20%) 0px 1px 15px 0px;
+}
+
+.app-form_heading .heading {
+    padding: 15px !important;
+    background-color: #e9eef3 !important;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.app-form_heading .heading .heading-title {
+    color: var(--color-main) !important;
+    margin-bottom: 0 !important;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.app-form_heading .heading:not(.heading-noBottom):after {
+    display: none;
+}
+
+.app-form {
+    padding: 30px;
 }
 
 .app-form .form-group {
